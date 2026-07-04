@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌊 KSG 流浪 🌊 个人空间与赛事数据系统</title>
+    <!-- 引入圆润可爱的 Google 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS 基础样式 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js 绘制图表 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Nunito', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(180deg, #EAF4F9 0%, #D4ECFC 100%);
+            color: #2F4052;
+        }
+
+        .title-font {
+            font-family: 'ZCOOL KuaiLe', cursive, sans-serif;
+        }
+
+        /* 统一卡通可爱气泡投影 */
+        .bubble-card {
+            background: #FFFFFF;
+            border: 4px solid #FFF;
+            box-shadow: 0 10px 20px rgba(162, 210, 255, 0.25), inset 0 -4px 0px rgba(212, 236, 252, 0.4);
+            border-radius: 24px;
+            transition: all 0.25s ease;
+        }
+
+        .bubble-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 25px rgba(162, 210, 255, 0.35), inset 0 -4px 0px rgba(212, 236, 252, 0.4);
+        }
+
+        /* 导航栏样式 */
+        .nav-tab {
+            transition: all 0.2s ease;
+            font-family: 'ZCOOL KuaiLe', cursive, sans-serif;
+        }
+        .nav-tab.active {
+            background-color: #90CDF4;
+            color: #FFFFFF;
+            box-shadow: 0 6px 12px rgba(144, 205, 244, 0.4);
+            transform: scale(1.05);
+        }
+
+        /* 窄横条荣誉框样式 */
+        .honor-strip {
+            background: rgba(255, 255, 255, 0.85);
+            border: 2px solid #FFF;
+            box-shadow: 0 4px 10px rgba(162, 210, 255, 0.12);
+            border-radius: 16px;
+            transition: all 0.2s ease;
+        }
+        .honor-strip:hover {
+            background: #FFFFFF;
+            transform: translateX(4px);
+            border-color: #BEE3F8;
+        }
+
+        /* 贴纸徽章 */
+        .sticker-badge {
+            border: 2px solid #FFF;
+            box-shadow: 0 4px 8px rgba(162, 210, 255, 0.15);
+            border-radius: 50px;
+        }
+
+        /* 隐藏水平滚动条 */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* 左右两侧渐变遮罩 */
+        .carousel-container {
+            position: relative;
+        }
+        .carousel-container::before, .carousel-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50px;
+            z-index: 10;
+            pointer-events: none;
+        }
+        .carousel-container::before {
+            left: 0;
+            background: linear-gradient(to right, #EAF4F9, transparent);
+        }
+        .carousel-container::after {
+            right: 0;
+            background: linear-gradient(to left, #D4ECFC, transparent);
+        }
+
+        /* 背景装饰点点 */
+        .bg-dots {
+            background-image: radial-gradient(#BEE3F8 15%, transparent 16%);
+            background-size: 24px 24px;
+            opacity: 0.4;
+        }
+
+        /* 表格圆润可爱化 */
+        .custom-table {
+            border-radius: 20px;
+            overflow: hidden;
+            border: 4px solid #FFF;
+            box-shadow: 0 10px 20px rgba(162, 210, 255, 0.15);
+        }
+
+        /* 新增：手绘贴纸拍立得相框 */
+        .polaroid-frame {
+            background: #FFFFFF;
+            padding: 16px 16px 40px 16px;
+            box-shadow: 0 12px 28px rgba(162, 210, 255, 0.3);
+            border: 3px solid #EBF8FF;
+            transform: rotate(2deg);
+            transition: all 0.3s ease;
+        }
+        .polaroid-frame:hover {
+            transform: rotate(0deg) scale(1.03);
+        }
+        /* 拍立得顶部的卡通胶带贴纸 */
+        .polaroid-tape {
+            width: 100px;
+            height: 30px;
+            background: rgba(254, 252, 191, 0.8);
+            border-left: 3px dashed #FAF089;
+            border-right: 3px dashed #FAF089;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-5deg);
+        }
+
+        /* 呼吸跳动的引导箭头动画 */
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+        .bounce-arrow {
+            animation: bounce-slow 2s infinite ease-in-out;
+        }
+
+        /* 社交媒体品牌色 */
+        .brand-weibo { background-color: #FF8200; color: white; }
+        .brand-red { background-color: #FE2C55; color: white; }
+        .brand-douyin { background-color: #1C0B1B; color: white; }
+        .brand-kuaishou { background-color: #FF5000; color: white; }
+
+    </style>
+</head>
+<body class="min-h-screen relative overflow-x-hidden pb-20">
+
+    <!-- 装饰背景 -->
+    <div class="absolute inset-0 bg-dots pointer-events-none z-0"></div>
+
+    <!-- 顶部固定/悬浮式 萌系导航栏 -->
+    <nav class="sticky top-4 z-50 max-w-lg mx-auto px-4">
+        <div class="bg-white/95 backdrop-blur border-4 border-white p-1.5 rounded-full shadow-lg flex justify-around gap-1">
+            <button onclick="switchTab('profile')" id="tab-profile" class="nav-tab active px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-sm font-bold text-[#2B6CB0] hover:bg-[#EBF8FF]">
+                🏠 选手介绍
+            </button>
+            <button onclick="switchTab('timeline')" id="tab-timeline" class="nav-tab px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-sm font-bold text-[#2B6CB0] hover:bg-[#EBF8FF]">
+                🧭 追梦轨迹
+            </button>
+            <button onclick="switchTab('home')" id="tab-home" class="nav-tab px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-sm font-bold text-[#2B6CB0] hover:bg-[#EBF8FF]">
+                🌟 荣誉英雄
+            </button>
+            <button onclick="switchTab('stats')" id="tab-stats" class="nav-tab px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-sm font-bold text-[#2B6CB0] hover:bg-[#EBF8FF]">
+                📊 数据大厅
+            </button>
+        </div>
+    </nav>
+
+    <!-- 头部招牌 -->
+    <header class="relative z-10 max-w-6xl mx-auto pt-8 px-4 text-center">
+        <!-- 装饰小耳朵 -->
+        <div class="flex justify-center -mb-2 space-x-12 opacity-80">
+            <div class="w-10 h-6 bg-[#BEE3F8] rounded-t-full"></div>
+            <div class="w-14 h-8 bg-[#FFF9DB] rounded-t-full"></div>
+            <div class="w-10 h-6 bg-[#90CDF4] rounded-t-full"></div>
+        </div>
+        
+        <!-- 主蓝色招牌 -->
+        <div class="bg-[#90CDF4] border-4 border-white rounded-[24px] sm:rounded-[32px] p-4 sm:p-6 shadow-lg relative">
+            <h1 class="title-font text-white text-2xl sm:text-5xl tracking-wider drop-shadow-[0_2px_0_rgba(43,108,176,0.5)]">
+                🌊 KSG 流浪 🌊
+            </h1>
+            <p id="sub-title" class="text-[#2B6CB0] font-bold mt-2 text-xs sm:text-base bg-white/40 inline-block px-3 sm:px-4 py-1 rounded-full">
+                个人简介
+            </p>
+
+            <!-- 右侧贴纸在移动端自适应缩小为 w-14 h-14，电脑端保持 w-20 h-20 -->
+            <div class="absolute -right-2 -bottom-4 sm:-right-4 sm:-bottom-6 bg-[#FEFCBF] border-2 sm:border-4 border-white rounded-full w-14 h-14 sm:w-20 sm:h-20 flex flex-col items-center justify-center transform rotate-12 shadow-md z-20">
+                <span class="text-[#D69E2E] font-black text-[9px] sm:text-xs tracking-wider">KSG</span>
+                <span class="text-[#B7791F] font-black text-[11px] sm:text-sm -mt-0.5">LIULANG</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================== PAGE 0: 选手介绍页 ========================================== -->
+    <main id="page-profile" class="relative z-10 max-w-6xl mx-auto px-4 mt-12 space-y-12">
+        <!-- 创意咖啡馆店面封面 (COVER) -->
+        <section class="relative w-full min-h-[70vh] flex flex-col items-center justify-center bg-gradient-to-b from-[#EBF8FF] to-[#D4ECFC] rounded-[32px] border-4 border-white shadow-xl overflow-hidden px-6 py-12 text-center">
+            <!-- 咖啡馆可爱篷顶背景 -->
+            <div class="absolute top-0 left-0 right-0 h-16 flex">
+                <div class="flex-1 bg-[#90CDF4] h-10 rounded-b-xl border-b-4 border-white shadow-sm"></div>
+                <div class="flex-1 bg-[#EBF8FF] h-10 rounded-b-xl border-b-4 border-white shadow-sm"></div>
+                <div class="flex-1 bg-[#90CDF4] h-10 rounded-b-xl border-b-4 border-white shadow-sm"></div>
+                <div class="flex-1 bg-[#EBF8FF] h-10 rounded-b-xl border-b-4 border-white shadow-sm"></div>
+                <div class="flex-1 bg-[#90CDF4] h-10 rounded-b-xl border-b-4 border-white shadow-sm"></div>
+                <div class="flex-1 bg-[#EBF8FF] h-10 rounded-b-xl border-b-4 border-white shadow-sm"></div>
+            </div>
+
+            <div class="relative z-10 space-y-6 mt-8">
+                <p class="title-font text-[#2B6CB0] text-lg tracking-wider bg-white/60 inline-block px-4 py-1 rounded-full">🌊 WELCOME TO COZY CORNER 🌊</p>
+                <h2 class="title-font text-xl sm:text-5xl text-[#2B4052] leading-tight drop-shadow-md">
+                    你好，小浪花！<br>
+                    <span class="text-[#2B6CB0]">点击营业牌</span> 开启流浪的空间
+                </h2>
+                <p class="text-sm text-gray-500 font-bold">KSG · 流浪</p>
+                
+                <!-- 创意挂件：点击 OPEN 营业牌自动下滑 -->
+                <div class="flex justify-center pt-4">
+                    <button onclick="scrollToProfile()" class="transform hover:scale-110 active:scale-95 transition-all duration-300 focus:outline-none">
+                        <!-- 还原图中的木质 Open 挂牌 -->
+                        <div class="bg-[#4A5568] border-4 border-white text-white font-black px-8 py-3 rounded-2xl shadow-lg relative flex flex-col items-center">
+                            <!-- 吊牌的两根挂绳 -->
+                            <div class="absolute -top-4 left-6 w-1 h-4 bg-gray-500 rounded-full"></div>
+                            <div class="absolute -top-4 right-6 w-1 h-4 bg-gray-500 rounded-full"></div>
+                            
+                            <span class="text-xs text-[#FEFCBF] tracking-widest font-bold">KSG CAFE</span>
+                            <span class="text-2xl tracking-wider font-extrabold title-font mt-1 flex items-center gap-1.5 animate-pulse">
+                                🔔 OPEN
+                            </span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 向下滚动引导箭头 -->
+            <div class="absolute bottom-6 bounce-arrow text-[#90CDF4] text-xl font-bold cursor-pointer" onclick="scrollToProfile()">
+                往下探索 🐾
+            </div>
+        </section>
+
+        <!-- 选手图文详细介绍 (PROFILE) -->
+        <section id="profile-section" class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-white border-4 border-white rounded-[32px] p-6 sm:p-10 shadow-lg relative overflow-hidden">
+            <!-- 背景大猫爪装饰 -->
+            <div class="absolute -right-10 -bottom-10 text-9xl opacity-5 pointer-events-none select-none">🐾</div>
+
+            <!-- 左侧：个人基本数据卡 -->
+            <div class="md:col-span-7 space-y-6">
+                <div>
+                    <span class="text-xs font-black bg-[#90CDF4] text-white px-3 py-1 rounded-full sticker-badge tracking-wider">MEMBER CARD</span>
+                    <h2 class="title-font text-3xl sm:text-4xl text-[#2B4052] mt-3 flex items-center gap-2">
+                        流浪 <span class="text-xl text-[#90CDF4] font-bold">（张恒）</span>
+                    </h2>
+                </div>
+
+                <!-- 个人信息标签 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                    <div class="bg-[#F7FAFC] border border-[#E2E8F0] p-3 rounded-2xl flex items-center justify-between">
+                        <span class="text-[#718096] font-bold">🎂 出生日期</span>
+                        <span class="font-black text-[#2D3748]">2004.11.13</span>
+                    </div>
+                    <div class="bg-[#F7FAFC] border border-[#E2E8F0] p-3 rounded-2xl flex items-center justify-between">
+                        <span class="text-[#718096] font-bold">⚔️ 场上位置</span>
+                        <span class="font-black text-[#2B6CB0] bg-[#EBF8FF] px-2 py-0.5 rounded-md">中单</span>
+                    </div>
+                    <div class="bg-[#F7FAFC] border border-[#E2E8F0] p-3 rounded-2xl flex items-center justify-between">
+                        <span class="text-[#718096] font-bold">📍 选手籍贯</span>
+                        <span class="font-black text-[#2D3748]">中国 · 重庆</span>
+                    </div>
+                    <div class="bg-[#F7FAFC] border border-[#E2E8F0] p-3 rounded-2xl flex items-center justify-between">
+                        <span class="text-[#718096] font-bold">📅 登场时间</span>
+                        <span class="font-black text-[#2D3748]">2023.07.09</span>
+                    </div>
+                    <div class="bg-[#F7FAFC] border border-[#E2E8F0] p-3 rounded-2xl flex items-center justify-between">
+                        <span class="text-[#718096] font-bold">🍡 软糯外号</span>
+                        <span class="font-black text-[#DD6B20] bg-[#FFFAF0] px-2.5 py-0.5 rounded-full border border-[#FEEBC8]">汤圆</span>
+                    </div>
+                    <div class="bg-[#F7FAFC] border border-[#E2E8F0] p-3 rounded-2xl flex items-center justify-between">
+                        <span class="text-[#718096] font-bold">🌸 粉丝昵称</span>
+                        <span class="font-black text-[#319795] bg-[#E6FFFA] px-2.5 py-0.5 rounded-full border border-[#B2F5EA]">小浪花</span>
+                    </div>
+                    <div class="bg-[#F7FAFC] border border-[#E2E8F0] p-3 rounded-2xl flex items-center justify-between sm:col-span-2">
+                        <span class="text-[#718096] font-bold">🛡️ 现效力战队</span>
+                        <span class="font-black text-[#D69E2E] bg-[#FEFCBF] px-3 py-1 rounded-full border border-[#FAF089]">KSG 王者荣耀分部</span>
+                    </div>
+                </div>
+
+                <!-- 官方社媒链接 -->
+                <div class="pt-4 border-t-2 border-[#EBF8FF] space-y-3">
+                    <span class="block text-xs font-bold text-gray-400">CONNECT WITH LIULANG / 与流浪保持连接：</span>
+                    <div class="flex flex-wrap gap-2">
+                        
+                        <!-- 微博 -->
+                        <a href="https://weibo.com/u/7719101212" target="_blank" class="brand-weibo sticker-badge flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-black hover:opacity-90 transition-all">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9.9 18.25c-3.18.2-5.91-1.34-6.11-3.42s2.05-3.92 5.23-4.13c3.19-.2 5.91 1.34 6.12 3.42s-2.06 3.92-5.24 4.13zm5.7-4.15c-.1-.7-.84-1.17-1.63-1.05-.8.13-1.35.8-1.25 1.5.1.71.84 1.18 1.63 1.05.8-.12 1.35-.79 1.25-1.5zm-5.07 1.83c-.15.35-.55.51-.9.36s-.51-.55-.36-.91c.15-.35.55-.52.9-.36s.51.56.36.91zm.77-1.07c-.05.15-.22.22-.38.15s-.23-.19-.17-.34.22-.22.37-.15.23.19.18.34zm7.65-4.49c-.58-.87-1.74-1.2-2.73-.82.16-.36.21-.77.13-1.17-.18-.9-1-1.48-1.87-1.3-.43.1-.79.31-1.06.61-.17-.11-.37-.18-.58-.2-.93-.09-1.77.59-1.86 1.52-.02.26.03.5.13.73-.78-.18-1.62.1-2.12.78a1.86 1.86 0 00-.31 1.62C3.12 11.23 2 13.17 2 15.3c0 3.7 4.43 6.7 9.9 6.7s9.9-3 9.9-6.7c0-1.64-.86-3.13-2.26-4.21z"/></svg>
+                            微博
+                        </a>
+
+                        <!-- 小红书 -->
+                        <a href="https://www.xiaohongshu.com/user/profile/68ca87540000000021026fc9?xsec_token=YBJSPG7xYAwnAjfA1YfEgZCp8jnPRWdqoZh8M62PPFrLc=&xsec_source=app_share&&apptime=1783164387&shareRedId=ODY7MEU-OUE2NzUyOTgwNjY0OTc8ODdO&share_id=e3e6588667824178843e064a69737a46&xhsshare=CopyLink" target="_blank" class="brand-red sticker-badge flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-black hover:opacity-90 transition-all">
+                            <span class="font-extrabold text-sm">书</span>
+                            小红书
+                        </a>
+
+                        <!-- 抖音 -->
+                        <a href="https://www.douyin.com/user/MS4wLjABAAAADyKY1tcpfuDI4K6xaaH_ORW9-pxZdbvjeNU_iNCoBXk?from_tab_name=main" target="_blank" class="brand-douyin sticker-badge flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-black hover:opacity-90 transition-all">
+                            <span class="font-extrabold text-sm">音</span>
+                            抖音
+                        </a>
+
+                        <!-- 快手 -->
+                        <a href="https://v.kuaishou.com/K3geWZtA" target="_blank" class="brand-kuaishou sticker-badge flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-black hover:opacity-90 transition-all">
+                            <span class="font-extrabold text-sm">快</span>
+                            快手
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧：拍立得相框 -->
+            <div class="md:col-span-5 flex justify-center relative pt-12 md:pt-0">
+                <div class="polaroid-frame relative">
+                    <!-- 相框胶带纸 -->
+                    <div class="absolute polaroid-tape"></div>
+                    
+                    <!-- 选手照片 -->
+                    <div class="w-60 h-72 bg-[#EBF8FF] rounded-lg overflow-hidden border border-[#E2E8F0]">
+                        <img src="static/liulang.png" 
+                             alt="KSG 流浪" 
+                             onerror="this.onerror=null; this.src='https://via.placeholder.com/300x400/D4ECFC/2B6CB0?text=KSG+Liulang';" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <!-- 拍立得手写签名 -->
+                    <div class="text-center mt-4 title-font text-[#2B4052] text-xl tracking-widest">
+                        KSG 流浪 🐾
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== PAGE 1: 荣誉 & 英雄库 ========================================== -->
+    <main id="page-home" class="relative z-10 max-w-6xl mx-auto px-4 mt-12 space-y-12 hidden">
+        <!-- 荣誉殿堂 -->
+        <section class="space-y-6">
+            <h2 class="title-font text-2xl sm:text-3xl text-[#2B6CB0] flex items-center gap-2">
+                <span class="inline-block transform -rotate-12">🏆</span> 荣誉殿堂
+            </h2>
+
+            <div class="space-y-8">
+                <!-- 2026年 -->
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-[10px] font-black bg-[#90CDF4] text-white px-3 py-1 rounded-full sticker-badge">2026</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2">
+                            <span class="text-[#718096] font-bold shrink-0">📅 2026-06-30</span>
+                            <span class="text-[#4A5568] sm:ml-4 flex-grow">2026 KPL 夏季赛</span>
+                            <span class="font-black text-[#2B6CB0] sm:text-right">第2周最佳阵容</span>
+                        </div>
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2">
+                            <span class="text-[#718096] font-bold shrink-0">📅 2026-04-24</span>
+                            <span class="text-[#4A5568] sm:ml-4 flex-grow">2026 KPL 春季赛</span>
+                            <span class="font-black text-[#3182CE] sm:text-right">春季赛最佳阵容一阵</span>
+                        </div>
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2 !bg-[#FEFCBF]/60 !border-[#FAF089]">
+                            <span class="text-[#B7791F] font-bold shrink-0">📅 2026-04-11</span>
+                            <span class="text-[#744210] sm:ml-4 flex-grow">2026 KPL 春季赛</span>
+                            <span class="font-black text-[#D69E2E] sm:text-right">✨ iQOO冠名总决赛FMVP</span>
+                        </div>
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2 !bg-[#FEFCBF]/60 !border-[#FAF089]">
+                            <span class="text-[#B7791F] font-bold shrink-0">📅 2026-04-11</span>
+                            <span class="text-[#744210] sm:ml-4 flex-grow">2026 KPL 春季赛</span>
+                            <span class="font-black text-[#E53E3E] sm:text-right">👑 冠军</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2025年 -->
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-[10px] font-black bg-[#90CDF4] text-white px-3 py-1 rounded-full sticker-badge">2025</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2">
+                            <span class="text-[#718096] font-bold shrink-0">📅 2025-07-15</span>
+                            <span class="text-[#4A5568] sm:ml-4 flex-grow">2025 KPL 夏季赛</span>
+                            <span class="font-black text-[#2B6CB0] sm:text-right">第6周最佳阵容</span>
+                        </div>
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2">
+                            <span class="text-[#718096] font-bold shrink-0">📅 2025-07-01</span>
+                            <span class="text-[#4A5568] sm:ml-4 flex-grow">2025 KPL 夏季赛</span>
+                            <span class="font-black text-[#2B6CB0] sm:text-right">第4周最佳阵容</span>
+                        </div>
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2">
+                            <span class="text-[#718096] font-bold shrink-0">📅 2025-02-25</span>
+                            <span class="text-[#4A5568] sm:ml-4 flex-grow">2025 KPL 春季赛</span>
+                            <span class="font-black text-[#2B6CB0] sm:text-right">第2周最佳阵容</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2024年 -->
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-[10px] font-black bg-[#90CDF4] text-white px-3 py-1 rounded-full sticker-badge">2024</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2">
+                            <span class="text-[#718096] font-bold shrink-0">📅 2024-09-27</span>
+                            <span class="text-[#4A5568] sm:ml-4 flex-grow">2024 KPL 夏季赛</span>
+                            <span class="font-black text-[#2B6CB0] sm:text-right">夏季赛最佳阵容二阵</span>
+                        </div>
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2 !bg-[#EDF2F7]/80">
+                            <span class="text-[#4A5568] font-bold shrink-0">📅 2024-09-15</span>
+                            <span class="text-[#4A5568] sm:ml-4 flex-grow">2024 KPL 夏季赛</span>
+                            <span class="font-black text-[#4A5568] sm:text-right">🥈 亚军</span>
+                        </div>
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2">
+                            <span class="text-[#718096] font-bold shrink-0">📅 2024-07-23</span>
+                            <span class="text-[#4A5568] sm:ml-4 flex-grow">2024 KPL 夏季赛</span>
+                            <span class="font-black text-[#2B6CB0] sm:text-right">第6周最佳阵容</span>
+                        </div>
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2">
+                            <span class="text-[#718096] font-bold shrink-0">📅 2024-07-16</span>
+                            <span class="text-[#4A5568] sm:ml-4 flex-grow">2024 KPL 夏季赛</span>
+                            <span class="font-black text-[#2B6CB0] sm:text-right">第5周最佳阵容</span>
+                        </div>
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2">
+                            <span class="text-[#718096] font-bold shrink-0">📅 2024-07-09</span>
+                            <span class="text-[#4A5568] sm:ml-4 flex-grow">2024 KPL 夏季赛</span>
+                            <span class="font-black text-[#2B6CB0] sm:text-right">第4周最佳阵容</span>
+                        </div>
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2">
+                            <span class="text-[#718096] font-bold shrink-0">📅 2024-04-30</span>
+                            <span class="text-[#4A5568] sm:ml-4 flex-grow">2024 KPL 春季赛</span>
+                            <span class="font-black text-[#2B6CB0] sm:text-right">第11周最佳阵容</span>
+                        </div>
+                        <div class="honor-strip p-3 flex flex-col sm:flex-row sm:items-center justify-between text-sm gap-2">
+                            <span class="text-[#718096] font-bold shrink-0">📅 2024-04-30</span>
+                            <span class="text-[#4A5568] sm:ml-4 flex-grow">2024 KPL 春季赛</span>
+                            <span class="font-black text-[#2B6CB0] sm:text-right">第11周周最佳选手</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 国服英雄库 -->
+        <section class="space-y-6">
+            <div class="flex items-center justify-between">
+                <h2 class="title-font text-2xl sm:text-3xl text-[#2B6CB0] flex items-center gap-2">
+                    <span class="inline-block transform -rotate-12">🐾</span> 国服英雄库
+                </h2>
+                <!-- 滑动控制 -->
+                <div class="flex space-x-2">
+                    <button onclick="slideHero('left')" class="w-9 h-9 bg-white border-2 border-[#90CDF4] rounded-full flex items-center justify-center text-[#2B6CB0] hover:bg-[#EBF8FF] active:scale-95 transition-all shadow-sm">
+                        ◀
+                    </button>
+                    <button onclick="slideHero('right')" class="w-9 h-9 bg-white border-2 border-[#90CDF4] rounded-full flex items-center justify-center text-[#2B6CB0] hover:bg-[#EBF8FF] active:scale-95 transition-all shadow-sm">
+                        ▶
+                    </button>
+                </div>
+            </div>
+
+            <div class="carousel-container">
+                <div id="hero-slider" class="flex gap-5 overflow-x-auto no-scrollbar scroll-smooth py-3 px-1">
+                    <!-- JS 自动生成 21 张英雄卡片 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ========================================== PAGE 2: 赛事数据大厅 ========================================== -->
+    <main id="page-stats" class="relative z-10 max-w-7xl mx-auto px-4 mt-12 space-y-8 hidden">
+        
+        <!-- 核心数据卡片概览 -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bubble-card p-4 relative overflow-hidden flex flex-col justify-between min-h-[100px]">
+                <div class="text-[11px] text-gray-400 font-bold uppercase tracking-wider">总大局场次</div>
+                <div id="stat-total-matches" class="text-3xl font-black text-[#2B6CB0] mt-1">0</div>
+                <span class="absolute -right-3 -bottom-3 text-4xl opacity-10">🎮</span>
+            </div>
+            <div class="bubble-card p-4 relative overflow-hidden flex flex-col justify-between min-h-[100px]">
+                <div class="text-[11px] text-gray-400 font-bold uppercase tracking-wider">大局胜率 (胜/负)</div>
+                <div id="stat-match-winrate" class="text-2xl font-black text-[#4299E1] mt-1">0%</div>
+                <span class="absolute -right-3 -bottom-3 text-4xl opacity-10">🔥</span>
+            </div>
+            <div class="bubble-card p-4 relative overflow-hidden flex flex-col justify-between min-h-[100px]">
+                <div class="text-[11px] text-gray-400 font-bold uppercase tracking-wider">总小局场次</div>
+                <div id="stat-total-games" class="text-3xl font-black text-[#2B6CB0] mt-1">0</div>
+                <span class="absolute -right-3 -bottom-3 text-4xl opacity-10">⚡</span>
+            </div>
+            <div class="bubble-card p-4 relative overflow-hidden flex flex-col justify-between min-h-[100px]">
+                <div class="text-[11px] text-gray-400 font-bold uppercase tracking-wider">小局胜率 (胜/负)</div>
+                <div id="stat-game-winrate" class="text-2xl font-black text-[#48BB78] mt-1">0%</div>
+                <span class="absolute -right-3 -bottom-3 text-4xl opacity-10">✨</span>
+            </div>
+        </section>
+
+        <!-- 数据高级筛选 (可爱的下拉框) -->
+        <section class="bubble-card p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="title-font text-lg text-[#2B6CB0] flex items-center gap-1.5">
+                    🔍 数据高级筛选
+                </h2>
+                <div id="loading-status" class="text-xs font-semibold text-blue-500 bg-blue-50 px-2.5 py-1 rounded-full border border-blue-100">
+                    正在同步后端数据...
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-end">
+                
+                <!-- 1. 年份 -->
+                <div class="relative custom-dropdown" id="dropdown-year">
+                    <span class="block text-xs font-black text-[#718096] mb-1.5 pl-1">年份</span>
+                    <button type="button" class="dropdown-trigger w-full border-2 border-[#E2E8F0] rounded-2xl p-2.5 text-sm text-left bg-white flex justify-between items-center focus:outline-none focus:border-[#90CDF4] transition-all">
+                        <span class="dropdown-selected-text text-gray-700 truncate font-semibold">全部</span>
+                        <svg class="w-4 h-4 text-gray-400 flex-shrink-0 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu hidden absolute z-30 mt-1.5 w-full bg-white border-2 border-[#BEE3F8] rounded-2xl shadow-xl p-2 flex flex-col">
+                        <input type="text" class="dropdown-search w-full border border-gray-200 rounded-xl p-1.5 text-xs mb-2 focus:outline-none focus:ring-1 focus:ring-[#90CDF4]">
+                        <ul class="dropdown-options overflow-y-auto max-h-40 text-xs text-gray-700 space-y-1"></ul>
+                    </div>
+                </div>
+
+                <!-- 2. 赛事 -->
+                <div class="relative custom-dropdown" id="dropdown-tournament">
+                    <span class="block text-xs font-black text-[#718096] mb-1.5 pl-1">赛事</span>
+                    <button type="button" class="dropdown-trigger w-full border-2 border-[#E2E8F0] rounded-2xl p-2.5 text-sm text-left bg-white flex justify-between items-center focus:outline-none focus:border-[#90CDF4] transition-all">
+                        <span class="dropdown-selected-text text-gray-700 truncate font-semibold">全部</span>
+                        <svg class="w-4 h-4 text-gray-400 flex-shrink-0 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu hidden absolute z-30 mt-1.5 w-full bg-white border-2 border-[#BEE3F8] rounded-2xl shadow-xl p-2 flex flex-col">
+                        <input type="text" class="dropdown-search w-full border border-gray-200 rounded-xl p-1.5 text-xs mb-2 focus:outline-none focus:ring-1 focus:ring-[#90CDF4]">
+                        <ul class="dropdown-options overflow-y-auto max-h-40 text-xs text-gray-700 space-y-1"></ul>
+                    </div>
+                </div>
+
+                <!-- 3. 对手 -->
+                <div class="relative custom-dropdown" id="dropdown-opponent">
+                    <span class="block text-xs font-black text-[#718096] mb-1.5 pl-1">交战对手</span>
+                    <button type="button" class="dropdown-trigger w-full border-2 border-[#E2E8F0] rounded-2xl p-2.5 text-sm text-left bg-white flex justify-between items-center focus:outline-none focus:border-[#90CDF4] transition-all">
+                        <span class="dropdown-selected-text text-gray-700 truncate font-semibold">全部</span>
+                        <svg class="w-4 h-4 text-gray-400 flex-shrink-0 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu hidden absolute z-30 mt-1.5 w-full bg-white border-2 border-[#BEE3F8] rounded-2xl shadow-xl p-2 flex flex-col">
+                        <input type="text" class="dropdown-search w-full border border-gray-200 rounded-xl p-1.5 text-xs mb-2 focus:outline-none focus:ring-1 focus:ring-[#90CDF4]">
+                        <ul class="dropdown-options overflow-y-auto max-h-40 text-xs text-gray-700 space-y-1"></ul>
+                    </div>
+                </div>
+
+                <!-- 4. 英雄 -->
+                <div class="relative custom-dropdown" id="dropdown-hero">
+                    <span class="block text-xs font-black text-[#718096] mb-1.5 pl-1">使用英雄</span>
+                    <button type="button" class="dropdown-trigger w-full border-2 border-[#E2E8F0] rounded-2xl p-2.5 text-sm text-left bg-white flex justify-between items-center focus:outline-none focus:border-[#90CDF4] transition-all">
+                        <span class="dropdown-selected-text text-gray-700 truncate font-semibold">全部</span>
+                        <svg class="w-4 h-4 text-gray-400 flex-shrink-0 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu hidden absolute z-30 mt-1.5 w-full bg-white border-2 border-[#BEE3F8] rounded-2xl shadow-xl p-2 flex flex-col">
+                        <input type="text" class="dropdown-search w-full border border-gray-200 rounded-xl p-1.5 text-xs mb-2 focus:outline-none focus:ring-1 focus:ring-[#90CDF4]">
+                        <ul class="dropdown-options overflow-y-auto max-h-40 text-xs text-gray-700 space-y-1"></ul>
+                    </div>
+                </div>
+
+                <!-- 5. MVP -->
+                <div class="relative custom-dropdown" id="dropdown-mvp">
+                    <span class="block text-xs font-black text-[#718096] mb-1.5 pl-1">MVP 获得</span>
+                    <button type="button" class="dropdown-trigger w-full border-2 border-[#E2E8F0] rounded-2xl p-2.5 text-sm text-left bg-white flex justify-between items-center focus:outline-none focus:border-[#90CDF4] transition-all">
+                        <span class="dropdown-selected-text text-gray-700 truncate font-semibold">全部</span>
+                        <svg class="w-4 h-4 text-gray-400 flex-shrink-0 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu hidden absolute z-30 mt-1.5 w-full bg-white border-2 border-[#BEE3F8] rounded-2xl shadow-xl p-2 flex flex-col">
+                        <input type="text" class="dropdown-search w-full border border-gray-200 rounded-xl p-1.5 text-xs mb-2 focus:outline-none focus:ring-1 focus:ring-[#90CDF4]">
+                        <ul class="dropdown-options overflow-y-auto max-h-40 text-xs text-gray-700 space-y-1"></ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 数据图表区 -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div class="bubble-card p-6">
+                <h3 class="title-font text-sm mb-4 text-[#2B6CB0]">📊 常用英雄场次与胜率</h3>
+                <div class="h-60">
+                    <canvas id="chart-hero"></canvas>
+                </div>
+            </div>
+            <div class="bubble-card p-6">
+                <h3 class="title-font text-sm mb-4 text-[#2B6CB0]">⚔️ 对手交锋胜率对比 (大局 vs 小局)</h3>
+                <div class="h-60">
+                    <canvas id="chart-opponent"></canvas>
+                </div>
+            </div>
+            <div class="bubble-card p-6">
+                <h3 class="title-font text-sm mb-4 text-[#2B6CB0]">📈 累计胜率波动走势</h3>
+                <div class="h-60">
+                    <canvas id="chart-winrate-trend"></canvas>
+                </div>
+            </div>
+            <div class="bubble-card p-6">
+                <h3 class="title-font text-sm mb-4 text-[#2B6CB0]">🍩 小局胜负与 MVP 获取占比</h3>
+                <div class="h-60">
+                    <canvas id="chart-win-mvp-ratio"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- 数据表格 -->
+        <section class="bg-white rounded-[24px] shadow-lg border-4 border-white overflow-hidden">
+            <div class="px-6 py-4 bg-[#EBF8FF]/50 border-b-2 border-white flex justify-between items-center flex-wrap gap-2">
+                <div>
+                    <h2 class="title-font text-lg text-[#2B6CB0]">📋 赛事数据明细表</h2>
+                    <p class="text-[10px] text-gray-400 mt-0.5">点击大局行可以展开或折叠小局详情哦</p>
+                </div>
+                <span class="text-xs bg-white border border-[#BEE3F8] text-[#2B6CB0] font-black px-3 py-1.5 rounded-full">
+                    已选小局: <span id="table-row-count" class="text-[#E53E3E]">0</span> 条
+                </span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full text-left border-collapse min-w-[1000px]">
+                    <thead>
+                        <tr class="bg-[#F0F4F8] text-[#4A5568] text-xs uppercase font-semibold border-b-2 border-white">
+                            <th class="py-3 px-4 whitespace-nowrap">时间 / 状态</th>
+                            <th class="py-3 px-4 whitespace-nowrap">赛事</th>
+                            <th class="py-3 px-4 whitespace-nowrap">对阵信息</th>
+                            <th class="py-3 px-4 text-center whitespace-nowrap">比分</th>
+                            <th class="py-3 px-4 text-center whitespace-nowrap">局数</th>
+                            <th class="py-3 px-4 text-center whitespace-nowrap">使用英雄</th>
+                            <th class="py-3 px-4 text-center whitespace-nowrap">KDA</th>
+                            <th class="py-3 px-4 text-center whitespace-nowrap">时长</th>
+                            <th class="py-3 px-4 text-center whitespace-nowrap">胜负</th>
+                            <th class="py-3 px-4 text-center whitespace-nowrap">MVP</th>
+                            <th class="py-3 px-4 whitespace-nowrap">队友阵容</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-table-body" class="divide-y divide-gray-100 text-xs">
+                        <!-- 动态渲染 -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <!-- ========================================== PAGE 4: 职业里程碑时间轴页 ========================================== -->
+    <main id="page-timeline" class="relative z-10 max-w-5xl mx-auto px-4 mt-12 space-y-12 hidden">
+        <div class="bubble-card p-6 sm:p-10 relative">
+            <div class="absolute -right-6 -top-6 text-5xl opacity-20 transform rotate-12">🧭</div>
+            <h2 class="title-font text-2xl sm:text-3xl text-[#2B6CB0] mb-8 flex items-center gap-2">
+                🌟 追梦轨迹 · 职业生涯时间轴
+            </h2>
+
+            <!-- 时间轴总轴线 (虚线轨道) -->
+            <div class="relative border-l-4 border-dashed border-[#90CDF4]/60 ml-6 sm:ml-10 pl-8 sm:pl-12 space-y-12 py-4" id="timeline-container">
+                <!-- 由 JavaScript 动态生成时间节点 -->
+            </div>
+        </div>
+    </main>
+
+    <!-- 萌系底层 -->
+    <footer class="text-center text-xs text-[#718096] mt-16 relative z-10">
+        <p>🐾 KSG 流浪 个人数据 🐾</p>
+    </footer>
+
+    <script>
+        // ========================================== PAGE 1: 静态英雄数据 ==========================================
+        const heroData = [
+            { name: "元流之子", power: "15886" },
+            { name: "王昭君", power: "20474" },
+            { name: "弈星", power: "22185" },
+            { name: "沈梦溪", power: "20048" },
+            { name: "女娲", power: "22318" },
+            { name: "嫦娥", power: "20482" },
+            { name: "西施", power: "21808" },
+            { name: "杨玉环", power: "21386" },
+            { name: "貂蝉", power: "21399" },
+            { name: "干将莫邪", power: "19378" },
+            { name: "不知火舞", power: "21268" },
+            { name: "公孙离", power: "21750" },
+            { name: "露娜", power: "18913" },
+            { name: "墨子", power: "17135" },
+            { name: "大乔", power: "20809" },
+            { name: "甄姬", power: "18339" },
+            { name: "嬴政", power: "16962" },
+            { name: "小乔", power: "19136" },
+            { name: "海月", power: "19913" },
+            { name: "安琪拉", power: "14334" },
+            { name: "上官婉儿", power: "12714" }
+        ];
+
+        // 渲染首页国服英雄卡牌 (调整比例 w-56 与 h-44，布局更美观)
+        function renderHomeHeroes() {
+            const container = document.getElementById('hero-slider');
+            const cardsHtml = heroData.map(hero => {
+                return `
+                    <div class="flex-shrink-0 w-60 bubble-card p-4 flex flex-col items-center text-center">
+                        <div class="w-full h-80 bg-[#EBF8FF] rounded-xl border border-[#BEE3F8] overflow-hidden relative flex items-center justify-center">
+                            <img src="static/${hero.name}.png" 
+                                 alt="${hero.name}" 
+                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/200x150/EBF8FF/2B6CB0?text=${hero.name}';" 
+                                 class="object-cover w-full h-full" />
+                            <span class="absolute top-2 left-2 bg-[#FFD166] text-white text-[10px] font-black px-2 py-0.5 rounded-full sticker-badge">国服</span>
+                        </div>
+                        <h3 class="title-font text-base text-[#2B4052] mt-3">${hero.name}</h3>
+                        <p class="text-xs bg-[#EBF8FF] text-[#2B6CB0] font-black px-3 py-1 rounded-full mt-2">
+                            最高 ${Number(hero.power).toLocaleString()}
+                        </p>
+                    </div>
+                `;
+            }).join('');
+            container.innerHTML = cardsHtml;
+        }
+
+        // ========================================== PAGE 4: 静态时间轴里程碑数据 ==========================================
+        const timelineData = [
+            { id: "1", date: "2021", title: "全国大赛盐城 RC 出战，正式踏入职业赛道", desc: "告别路人高分段，初次站上线下职业赛场，埋下中路追梦种子。", imgs: ["1.png"], isVertical: false },
+            { id: "2", date: "2023.01.04", title: "北京 WB 官宣自留签升入一队大名单", desc: "拿到 KPL 注册选手资格，拥有登上顶级联赛的入场券。", imgs: ["2.png"], isVertical: false },
+            { id: "3", date: "2023 上半年", title: "租借 K 甲 MD 战队，多次拿下全场最佳", desc: "次级联赛打磨节奏与团战，为 KPL 首秀积攒赛场经验。", imgs: ["3.png"], isVertical: false },
+            { id: "4", date: "2023.07.09", title: "KPL 职业生涯首秀", desc: "职业生涯第一场 KPL 正赛，两小局连拿 MVP，险些完成让二追三，一战被观众熟知！", imgs: ["4.png"], isVertical: false },
+            { id: "5", date: "2023.11.13", title: "19岁生日", desc: "身披 WB 队服度过职业第一年生日，仍处于替补轮换阶段。", imgs: ["5.png"], isVertical: true },
+            { id: "6", date: "2024.01.21", title: "官宣从北京 WB 转会苏州 KSG", desc: "职业生涯最重要转折点，告别漫长替补，奔赴 KSG 开启首发核心之路！", imgs: ["6.png"], isVertical: false },
+            { id: "7", date: "2024.07.09", title: "KPL 登场 1 周年纪念", desc: "距离首秀过去一整年，完成转会、首发、闯进总决赛三大跨越。", imgs: ["7.png"], isVertical: false },
+            { id: "8", date: "2024.09.15", title: "2024KPL 夏季赛总决赛・联赛亚军", desc: "带领 KSG 闯入队史首个总决赛，收获亚军，留下遗憾伏笔。", imgs: ["8.png"], isVertical: false },
+            { id: "9", date: "2024.11.10", title: "达成 1000 职业助攻里程碑", desc: "千次助攻见证他兼顾输出与团队拉扯的全能中路特质。", imgs: ["9.png"], isVertical: true },
+            { id: "10", date: "2024.11.13", title: "20岁生日", desc: "转会 KSG 后首个生日，已经完成从替补到决赛中单的蜕变。", imgs: ["10.png"], isVertical: false },
+            { id: "11", date: "2025.07.09", title: "KPL 登场 2 周年纪念", desc: "两年职业路，从新人替补成长为 KSG 绝对核心。", imgs: ["11.png"], isVertical: false },
+            { id: "12", date: "2025.07.10", title: "达成 300 职业总局、500 总击杀双里程碑", desc: "个人赛场数据再创新高，职业生涯对局与击杀双重突破！", imgs: ["12.png", "12(1).png"], isVertical: false },
+            { id: "13", date: "2025.10.03", title: "解锁 200 场职业胜利里程碑", desc: "职业生涯胜场突破 200，胜率稳步提升。", imgs: ["13.png"], isVertical: false },
+            { id: "14", date: "2025.11.13", title: "21 岁生日", desc: "沉淀两年赛场经验，向着冠军全力冲刺。", imgs: ["14.png"], isVertical: false },
+            { id: "15", date: "2026.01.22", title: "达成 400 职业总局里程碑", desc: "职业对局突破 400 场，赛场经验完全拉满。", imgs: ["15.png"], isVertical: true },
+            { id: "16", date: "2026.02.11", title: "达成 2000 职业助攻里程碑", desc: "两千助攻达成，团队型中单价值拉满！", imgs: ["16.png"], isVertical: true },
+            { id: "17", date: "2026.04.11", title: "2026KPL 春季赛总冠军 + FMVP", desc: "4:0 零封对手，拿下 KSG 队史首座银龙杯！包揽三局单局 MVP，加冕 iQOO 总决赛 FMVP，完成多年逆袭圆梦！", imgs: ["17.png", "17(1).png"], isVertical: false }
+        ];
+
+        // 动态渲染时间轴
+        function renderTimeline() {
+            const container = document.getElementById('timeline-container');
+            const timelineHtml = timelineData.map(node => {
+                // 图片排列逻辑：单图/多图并排
+                const isMultiImg = node.imgs.length > 1;
+                const imgClass = node.isVertical 
+                    ? "w-48 sm:w-60 h-auto object-cover rounded-xl border border-gray-200 shadow-md transition-transform hover:scale-[1.02]" 
+                    : "w-full max-w-2xl h-auto object-cover rounded-xl border border-gray-200 shadow-md transition-transform hover:scale-[1.01]";
+
+                const imagesHtml = isMultiImg 
+                    ? `<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mt-4">
+                         ${node.imgs.map(img => `<img src="static/time/${img}" onerror="this.src='https://via.placeholder.com/400x250/EBF8FF/2B6CB0?text=KSG+Liulang';" class="${imgClass}" />`).join('')}
+                       </div>`
+                    : `<div class="mt-4 flex ${node.isVertical ? 'justify-start' : 'justify-start'}">
+                         <img src="static/time/${node.imgs[0]}" onerror="this.src='https://via.placeholder.com/400x250/EBF8FF/2B6CB0?text=KSG+Liulang';" class="${imgClass}" />
+                       </div>`;
+
+                return `
+                    <div class="relative pl-2 sm:pl-4">
+                        <!-- 轨道可爱锚点 (黄底蓝框小爪子) -->
+                        <div class="absolute -left-[45px] sm:-left-[61px] top-1.5 w-7 h-7 rounded-full bg-[#FEFCBF] border-4 border-[#90CDF4] shadow-md flex items-center justify-center text-xs z-20">
+                            🐾
+                        </div>
+
+                        <!-- 时间日期小贴纸 -->
+                        <span class="inline-block bg-[#90CDF4] text-white text-xs sm:text-sm font-black px-4 py-1 rounded-full sticker-badge tracking-wider mb-3">
+                            ${node.date}
+                        </span>
+
+                        <!-- 内容卡片 -->
+                        <div class="bubble-card p-4 sm:p-6 space-y-3 bg-white max-w-4xl">
+                            <h3 class="title-font text-lg sm:text-xl text-[#2B4052] font-black">${node.title}</h3>
+                            <p class="text-sm sm:text-base text-gray-600 leading-relaxed font-bold border-l-4 border-[#BEE3F8] pl-3">
+                                ${node.desc}
+                            </p>
+                            <!-- 图片展示区 -->
+                            ${imagesHtml}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            container.innerHTML = timelineHtml;
+        }
+
+        // 修改原本的初始化逻辑：让 init 同时启动时间轴渲染
+        const originalInit = init;
+        init = async function() {
+            renderTimeline();  // 新增时间轴渲染启动
+            await originalInit();
+        }
+
+        function slideHero(direction) {
+            const container = document.getElementById('hero-slider');
+            const scrollDistance = 248; // 56 (224px) + gap 6 (24px) = 248px
+            if (direction === 'left') {
+                container.scrollBy({ left: -scrollDistance, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: scrollDistance, behavior: 'smooth' });
+            }
+        }
+
+        // 四页面自适应切换控制
+        function switchTab(target) {
+            const tabProfile = document.getElementById('tab-profile');
+            const tabTimeline = document.getElementById('tab-timeline');
+            const tabHome = document.getElementById('tab-home');
+            const tabStats = document.getElementById('tab-stats');
+
+            const pageProfile = document.getElementById('page-profile');
+            const pageTimeline = document.getElementById('page-timeline');
+            const pageHome = document.getElementById('page-home');
+            const pageStats = document.getElementById('page-stats');
+            
+            const subTitle = document.getElementById('sub-title');
+
+            // 隐藏所有面板，去除所有高亮
+            [tabProfile, tabTimeline, tabHome, tabStats].forEach(tab => tab.classList.remove('active'));
+            [pageProfile, pageTimeline, pageHome, pageStats].forEach(page => page.classList.add('hidden'));
+
+            if (target === 'profile') {
+                tabProfile.classList.add('active');
+                pageProfile.classList.remove('hidden');
+                subTitle.textContent = "个人空间与秘密小屋";
+            } else if (target === 'timeline') {
+                tabTimeline.classList.add('active');
+                pageTimeline.classList.remove('hidden');
+                subTitle.textContent = "职业生涯重大里程碑与荣耀足迹";
+            } else if (target === 'home') {
+                tabHome.classList.add('active');
+                pageHome.classList.remove('hidden');
+                subTitle.textContent = "荣誉殿堂与国服英雄库";
+            } else if (target === 'stats') {
+                tabStats.classList.add('active');
+                pageStats.classList.remove('hidden');
+                subTitle.textContent = "赛事官方数据深度统计";
+                setTimeout(() => {
+                    updateDashboard();
+                }, 50);
+            }
+        }
+
+
+        // ========================================== PAGE 2: 数据表格与过滤逻辑 ==========================================
+        let flatData = [];
+        let originalMatches = [];
+        let dropdownInstances = {};
+        let chartInstances = {};
+
+        // 数据拉取与清洗解析
+        async function loadBackendData() {
+            const statusEl = document.getElementById('loading-status');
+            try {
+                const response = await fetch('./static/data.json');
+                if (!response.ok) throw new Error("获取数据失败");
+                
+                flatData = await response.json();
+                
+                const matchMap = new Map();
+                flatData.forEach(g => {
+                    if (!matchMap.has(g.matchId)) {
+                        matchMap.set(g.matchId, {
+                            id: g.matchId,
+                            year: g.year,
+                            tournament: g.tournament,
+                            opponent: g.opponent,
+                            isMatchWin: g.isMatchWin
+                        });
+                    }
+                });
+                originalMatches = Array.from(matchMap.values());
+
+                statusEl.textContent = "同步成功";
+                statusEl.className = "text-xs font-semibold text-green-500 bg-green-50 px-2.5 py-1 rounded-full border border-green-100";
+                setTimeout(() => statusEl.style.display = 'none', 3000);
+
+            } catch (err) {
+                console.error(err);
+                statusEl.textContent = "数据拉取失败";
+                statusEl.className = "text-xs font-semibold text-red-500 bg-red-50 px-2.5 py-1 rounded-full border border-red-100";
+            }
+        }
+
+        // ==================== 统一格式的可检索式下拉框核心生成器 ====================
+        function setupSearchableDropdown(containerId, optionsList, searchPlaceholder, onSelectCallback) {
+            const container = document.getElementById(containerId);
+            const trigger = container.querySelector('.dropdown-trigger');
+            const selectedText = container.querySelector('.dropdown-selected-text');
+            const menu = container.querySelector('.dropdown-menu');
+            const searchInput = container.querySelector('.dropdown-search');
+            const optionsUl = container.querySelector('.dropdown-options');
+
+            let currentValue = ""; 
+            searchInput.placeholder = searchPlaceholder;
+
+            function renderOptions(filterText = "") {
+                optionsUl.innerHTML = "";
+
+                if (filterText === "") {
+                    const liAll = document.createElement('li');
+                    liAll.className = `px-2 py-1.5 hover:bg-blue-50 cursor-pointer rounded text-xs transition-colors ${currentValue === "" ? "font-bold text-blue-600 bg-blue-50/50" : ""}`;
+                    liAll.textContent = "全部";
+                    liAll.onclick = () => selectItem("", "全部");
+                    optionsUl.appendChild(liAll);
+                }
+
+                optionsList.forEach(opt => {
+                    const label = opt.label !== undefined ? opt.label : opt;
+                    const value = opt.value !== undefined ? opt.value : opt;
+
+                    if (filterText && !label.toLowerCase().includes(filterText.toLowerCase())) return;
+
+                    const li = document.createElement('li');
+                    li.className = `px-2 py-1.5 hover:bg-[#EBF8FF] cursor-pointer rounded-lg text-xs transition-colors ${currentValue === value ? "font-bold text-[#2B6CB0] bg-[#EBF8FF]" : ""}`;
+                    li.textContent = label;
+                    li.onclick = () => selectItem(value, label);
+                    optionsUl.appendChild(li);
+                });
+            }
+
+            function selectItem(val, label) {
+                currentValue = val;
+                selectedText.textContent = label;
+                menu.classList.add('hidden');
+                searchInput.value = "";
+                renderOptions("");
+                onSelectCallback(val);
+            }
+
+            trigger.onclick = (e) => {
+                e.stopPropagation();
+                document.querySelectorAll('.custom-dropdown .dropdown-menu').forEach(otherMenu => {
+                    if (otherMenu !== menu) otherMenu.classList.add('hidden');
+                });
+                menu.classList.toggle('hidden');
+                if (!menu.classList.contains('hidden')) {
+                    searchInput.focus();
+                }
+            };
+
+            searchInput.oninput = (e) => {
+                renderOptions(e.target.value);
+            };
+
+            renderOptions("");
+
+            return {
+                getValue: () => currentValue
+            };
+        }
+
+        // ==================== 样式辅助函数 ====================
+        function getTournamentBadge(tour) {
+            if (!tour) return '-';
+            let colorClasses = 'bg-gray-50 text-gray-600 border-gray-200';
+            if (tour.includes('春季赛')) {
+                colorClasses = 'bg-[#E6FFFA] text-[#00A389] border-[#B2F5EA]';
+            } else if (tour.includes('夏季赛')) {
+                colorClasses = 'bg-[#FFFAF0] text-[#DD6B20] border-[#FEEBC8]';
+            } else if (tour.includes('挑战者杯')) {
+                colorClasses = 'bg-[#FAF5FF] text-[#805AD5] border-[#EBF8FF]';
+            } else if (tour.includes('年度总决赛')) {
+                colorClasses = 'bg-[#FEFCBF] text-[#B7791F] border-[#FEFCBF] font-bold';
+            }
+            return `<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold border inline-block whitespace-nowrap text-center ${colorClasses}">${tour}</span>`;
+        }
+
+        function formatTeammatesToBoxes(teammatesStr) {
+            if (!teammatesStr || teammatesStr.trim() === "") return '-';
+            const arr = teammatesStr.split(/[、,，\s]+/).filter(Boolean);
+            if (arr.length === 0) return '-';
+            return arr.map(name => {
+                return `<span class="inline-block bg-[#EBF8FF] text-[#2B6CB0] border border-[#BEE3F8] text-[10px] px-2 py-0.5 rounded-md shadow-sm mr-1 mb-1 whitespace-nowrap font-bold">${name}</span>`;
+            }).join('');
+        }
+
+        function toggleMatchRows(matchId) {
+            const rows = document.querySelectorAll(`.match-detail-${matchId}`);
+            const arrow = document.getElementById(`arrow-${matchId}`);
+            rows.forEach(row => {
+                row.classList.toggle('hidden');
+            });
+            if (arrow) {
+                arrow.textContent = arrow.textContent === '▶' ? '▼' : '▶';
+            }
+        }
+
+        // 下拉框组件初始化
+        function initAllDropdowns() {
+            const years = [...new Set(flatData.map(d => d.year))].filter(Boolean).sort();
+            dropdownInstances.year = setupSearchableDropdown('dropdown-year', years, '搜索年份...', () => updateDashboard());
+
+            const tournaments = [...new Set(flatData.map(d => d.tournament))].filter(Boolean);
+            dropdownInstances.tournament = setupSearchableDropdown('dropdown-tournament', tournaments, '搜索赛事...', () => updateDashboard());
+
+            const opponents = [...new Set(flatData.map(d => d.opponent))].filter(Boolean);
+            dropdownInstances.opponent = setupSearchableDropdown('dropdown-opponent', opponents, '搜索对手...', () => updateDashboard());
+
+            const heroes = [...new Set(flatData.map(d => d.hero))].filter(Boolean).sort();
+            dropdownInstances.hero = setupSearchableDropdown('dropdown-hero', heroes, '搜英雄...', () => updateDashboard());
+
+            const mvpOptions = [
+                { label: '是 MVP', value: 'yes' },
+                { label: '非 MVP', value: 'no' }
+            ];
+            dropdownInstances.mvp = setupSearchableDropdown('dropdown-mvp', mvpOptions, '筛选MVP...', () => updateDashboard());
+        }
+
+        // 更新仪表盘面板
+        function updateDashboard() {
+            const fYear = dropdownInstances.year ? dropdownInstances.year.getValue() : "";
+            const fTour = dropdownInstances.tournament ? dropdownInstances.tournament.getValue() : "";
+            const fOpp = dropdownInstances.opponent ? dropdownInstances.opponent.getValue() : "";
+            const fHero = dropdownInstances.hero ? dropdownInstances.hero.getValue().toLowerCase() : "";
+            const fMvp = dropdownInstances.mvp ? dropdownInstances.mvp.getValue() : "";
+
+            const filteredGames = flatData.filter(d => {
+                if (fYear && d.year !== fYear) return false;
+                if (fTour && d.tournament !== fTour) return false;
+                if (fOpp && d.opponent !== fOpp) return false;
+                if (fHero && !d.hero.toLowerCase().includes(fHero)) return false;
+                if (fMvp === 'yes' && !d.mvp) return false;
+                if (fMvp === 'no' && d.mvp) return false;
+                return true;
+            });
+
+            const visibleMatchIds = [...new Set(filteredGames.map(g => g.matchId))];
+            const filteredMatches = originalMatches.filter(m => visibleMatchIds.includes(m.id));
+
+            const totalMatches = filteredMatches.length;
+            const winMatches = filteredMatches.filter(m => m.isMatchWin).length;
+            const matchWinRate = totalMatches > 0 ? ((winMatches / totalMatches) * 100).toFixed(1) : 0;
+
+            const totalGames = filteredGames.length;
+            const winGames = filteredGames.filter(g => g.result === '胜').length;
+            const gameWinRate = totalGames > 0 ? ((winGames / totalGames) * 100).toFixed(1) : 0;
+
+            document.getElementById('stat-total-matches').textContent = totalMatches;
+            document.getElementById('stat-match-winrate').textContent = `${matchWinRate}% (${winMatches}/${totalMatches - winMatches})`;
+            document.getElementById('stat-total-games').textContent = totalGames;
+            document.getElementById('stat-game-winrate').textContent = `${gameWinRate}% (${winGames}/${totalGames - winGames})`;
+
+            renderGroupedTable(filteredGames);
+            renderHeroChart(filteredGames);
+            renderOpponentChart(filteredGames, filteredMatches);
+            renderWinRateTrendChart(filteredGames);
+            renderWinMvpRatioChart(filteredGames);
+        }
+
+        // 渲染大局折叠表格
+        function renderGroupedTable(games) {
+            const tbody = document.getElementById('data-table-body');
+            tbody.innerHTML = '';
+            document.getElementById('table-row-count').textContent = games.length;
+
+            if (games.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="11" class="py-8 text-center text-gray-400 font-bold">暂无对应比赛数据</td></tr>`;
+                return;
+            }
+
+            const grouped = {};
+            games.forEach(g => {
+                if (!grouped[g.matchId]) grouped[g.matchId] = [];
+                grouped[g.matchId].push(g);
+            });
+
+            Object.keys(grouped).forEach(matchId => {
+                const matchGames = grouped[matchId];
+                const firstGame = matchGames[0];
+
+                const bigRoundWinBadge = firstGame.isMatchWin
+                    ? '<span class="px-2 py-0.5 bg-[#EBF8FF] text-[#2B6CB0] text-[10px] font-bold rounded-lg border border-[#90CDF4] inline-block whitespace-nowrap text-center">大局: 胜</span>'
+                    : '<span class="px-2 py-0.5 bg-[#FFF5F5] text-[#E53E3E] text-[10px] font-bold rounded-lg border border-[#FED7D7] inline-block whitespace-nowrap text-center">大局: 负</span>';
+
+                // 大局主行
+                const masterTr = document.createElement('tr');
+                masterTr.className = "cursor-pointer bg-[#F7FAFC] hover:bg-[#EDF2F7] font-bold border-y-2 border-white transition-colors";
+                masterTr.setAttribute('onclick', `toggleMatchRows(${matchId})`);
+
+                masterTr.innerHTML = `
+                    <td class="py-3 px-4 text-[#2B6CB0] font-bold whitespace-nowrap">
+                        <span id="arrow-${matchId}" class="inline-block transition-transform duration-200 mr-1">▶</span> ${firstGame.date}
+                    </td>
+                    <td class="py-3 px-4 whitespace-nowrap">${getTournamentBadge(firstGame.tournament)}</td>
+                    <td class="py-3 px-4 text-gray-800 whitespace-nowrap">${firstGame.fullMatchName}</td>
+                    <td class="py-3 px-4 text-center font-mono text-gray-700 font-bold whitespace-nowrap">${firstGame.score || '-'}</td>
+                    <td class="py-3 px-4 text-center whitespace-nowrap" colspan="4">
+                        <span class="bg-[#90CDF4] text-white text-[10px] px-3 py-1 rounded-full font-black">展开小局详情 (共 ${matchGames.length} 局)</span>
+                    </td>
+                    <td class="py-3 px-4 text-center whitespace-nowrap">${bigRoundWinBadge}</td>
+                    <td class="py-3 px-4 text-center text-gray-400 whitespace-nowrap">-</td>
+                    <td class="py-3 px-4 text-left">
+                        <div class="flex flex-wrap max-w-sm">${formatTeammatesToBoxes(firstGame.teammates)}</div>
+                    </td>
+                `;
+                tbody.appendChild(masterTr);
+
+                // 旗下细分小局行
+                matchGames.forEach(g => {
+                    const detailTr = document.createElement('tr');
+                    detailTr.className = `match-detail-${matchId} hidden bg-white transition-all`;
+
+                    const resultBadge = g.result === '胜' 
+                        ? '<span class="px-2 py-0.5 bg-[#C6F6D5] text-[#22543D] text-[10px] font-black rounded-md inline-block whitespace-nowrap text-center">胜</span>'
+                        : '<span class="px-2 py-0.5 bg-[#FED7D7] text-[#742A2A] text-[10px] font-black rounded-md inline-block whitespace-nowrap text-center">负</span>';
+
+                    const mvpBadge = g.mvp 
+                        ? '<span class="px-2 py-0.5 bg-[#FEFCBF] text-[#744210] text-[10px] font-black rounded-md border border-[#F6E05E] inline-block whitespace-nowrap text-center">MVP</span>' 
+                        : '-';
+
+                    detailTr.innerHTML = `
+                        <td class="py-2.5 px-4 text-gray-400 pl-8 whitespace-nowrap">└─ 局内细化</td>
+                        <td class="py-2.5 px-4 text-gray-400 whitespace-nowrap">-</td>
+                        <td class="py-2.5 px-4 text-gray-400 whitespace-nowrap">-</td>
+                        <td class="py-2.5 px-4 text-center text-gray-400 whitespace-nowrap">-</td>
+                        <td class="py-2.5 px-4 text-center font-bold text-slate-600 whitespace-nowrap">第${g.seq}局</td>
+                        <td class="py-2.5 px-4 text-center font-semibold text-gray-800 whitespace-nowrap">${g.hero}</td>
+                        <td class="py-2.5 px-4 text-center font-mono text-gray-600 whitespace-nowrap">${g.kda}</td>
+                        <td class="py-2.5 px-4 text-center text-gray-500 font-mono whitespace-nowrap">${g.duration}</td>
+                        <td class="py-2.5 px-4 text-center whitespace-nowrap">${resultBadge}</td>
+                        <td class="py-2.5 px-4 text-center whitespace-nowrap">${mvpBadge}</td>
+                        <td class="py-2.5 px-4 text-left">
+                            <div class="flex flex-wrap max-w-sm">${formatTeammatesToBoxes(g.teammates)}</div>
+                        </td>
+                    `;
+                    tbody.appendChild(detailTr);
+                });
+            });
+        }
+
+        // ==================== 可视化图表样式与生成 ====================
+        function renderHeroChart(games) {
+            const heroStats = {};
+            games.forEach(g => {
+                if (!heroStats[g.hero]) {
+                    heroStats[g.hero] = { total: 0, wins: 0 };
+                }
+                heroStats[g.hero].total += 1;
+                if (g.result === '胜') heroStats[g.hero].wins += 1;
+            });
+
+            const sortedHeroes = Object.keys(heroStats)
+                .map(name => ({
+                    name,
+                    total: heroStats[name].total,
+                    winRate: Math.round((heroStats[name].wins / heroStats[name].total) * 100)
+                }))
+                .sort((a, b) => b.total - a.total)
+                .slice(0, 5);
+
+            const labels = sortedHeroes.map(h => h.name);
+            const totals = sortedHeroes.map(h => h.total);
+            const winRates = sortedHeroes.map(h => h.winRate);
+
+            if (chartInstances.hero) chartInstances.hero.destroy();
+
+            const ctx = document.getElementById('chart-hero').getContext('2d');
+            chartInstances.hero = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: '出场场次',
+                            data: totals,
+                            backgroundColor: 'rgba(144, 205, 244, 0.8)', // 马卡龙浅蓝
+                            borderColor: '#90CDF4',
+                            borderWidth: 2,
+                            borderRadius: 6,
+                            yAxisID: 'y-count',
+                        },
+                        {
+                            label: '胜率 (%)',
+                            data: winRates,
+                            backgroundColor: 'rgba(254, 252, 191, 0.8)', // 奶茶软黄
+                            borderColor: '#FAF089',
+                            borderWidth: 2,
+                            borderRadius: 6,
+                            yAxisID: 'y-rate',
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { labels: { font: { family: 'Nunito' } } } },
+                    scales: {
+                        'y-count': {
+                            type: 'linear',
+                            position: 'left',
+                            title: { display: true, text: '场次', color: '#718096' },
+                            ticks: { stepSize: 1 }
+                        },
+                        'y-rate': {
+                            type: 'linear',
+                            position: 'right',
+                            title: { display: true, text: '胜率 (%)', color: '#718096' },
+                            min: 0,
+                            max: 100
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderOpponentChart(games, matches) {
+            const oppStats = {};
+            games.forEach(g => {
+                if (!oppStats[g.opponent]) {
+                    oppStats[g.opponent] = { gameTotal: 0, gameWins: 0, matchTotal: 0, matchWins: 0 };
+                }
+                oppStats[g.opponent].gameTotal += 1;
+                if (g.result === '胜') oppStats[g.opponent].gameWins += 1;
+            });
+
+            matches.forEach(m => {
+                if (oppStats[m.opponent]) {
+                    oppStats[m.opponent].matchTotal += 1;
+                    if (m.isMatchWin) oppStats[m.opponent].matchWins += 1;
+                }
+            });
+
+            const labels = Object.keys(oppStats);
+            const matchRates = labels.map(opp => {
+                const s = oppStats[opp];
+                return s.matchTotal > 0 ? Math.round((s.matchWins / s.matchTotal) * 100) : 0;
+            });
+            const gameRates = labels.map(opp => {
+                const s = oppStats[opp];
+                return s.gameTotal > 0 ? Math.round((s.gameWins / s.gameTotal) * 100) : 0;
+            });
+
+            if (chartInstances.opponent) chartInstances.opponent.destroy();
+
+            const ctx = document.getElementById('chart-opponent').getContext('2d');
+            chartInstances.opponent = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: '大局胜率 (%)',
+                            data: matchRates,
+                            backgroundColor: 'rgba(179, 197, 255, 0.8)', // 马卡龙软紫
+                            borderRadius: 6,
+                        },
+                        {
+                            label: '小局胜率 (%)',
+                            data: gameRates,
+                            backgroundColor: 'rgba(255, 182, 193, 0.8)', // 马卡龙樱粉
+                            borderRadius: 6,
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { min: 0, max: 100, title: { display: true, text: '百分比 (%)' } }
+                    }
+                }
+            });
+        }
+
+        function renderWinRateTrendChart(games) {
+            const chronGames = [...games].sort((a, b) => {
+                return a.date.localeCompare(b.date) || (a.seq - b.seq);
+            });
+
+            let runningWins = 0;
+            let runningGames = 0;
+            const labels = [];
+            const dataPoints = [];
+
+            chronGames.forEach((g) => {
+                runningGames++;
+                if (g.result === '胜') runningWins++;
+                const currentWinRate = ((runningWins / runningGames) * 100).toFixed(1);
+                
+                labels.push(`${g.date.substring(5)} (${g.hero})`);
+                dataPoints.push(parseFloat(currentWinRate));
+            });
+
+            if (chartInstances.trend) chartInstances.trend.destroy();
+
+            const ctx = document.getElementById('chart-winrate-trend').getContext('2d');
+            chartInstances.trend = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: '小局累计胜率 (%)',
+                        data: dataPoints,
+                        borderColor: '#90CDF4',
+                        backgroundColor: 'rgba(144, 205, 244, 0.15)',
+                        fill: true,
+                        tension: 0.3,
+                        borderWidth: 3,
+                        pointRadius: 2,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { min: 0, max: 100, title: { display: true, text: '胜率' } }
+                    }
+                }
+            });
+        }
+
+        function renderWinMvpRatioChart(games) {
+            let winWithMvp = 0;
+            let winNoMvp = 0;
+            let losses = 0;
+
+            games.forEach(g => {
+                if (g.result === '胜') {
+                    if (g.mvp) {
+                        winWithMvp++;
+                    } else {
+                        winNoMvp++;
+                    }
+                } else {
+                    losses++;
+                }
+            });
+
+            if (chartInstances.pie) chartInstances.pie.destroy();
+
+            const ctx = document.getElementById('chart-win-mvp-ratio').getContext('2d');
+            chartInstances.pie = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['胜局且夺得MVP 🏆', '普通胜局 🍀', '败局 🐾'],
+                    datasets: [{
+                        data: [winWithMvp, winNoMvp, losses],
+                        backgroundColor: [
+                            'rgba(254, 252, 191, 0.9)', // 奶茶软黄
+                            'rgba(198, 246, 213, 0.9)', // 薄荷轻绿
+                            'rgba(254, 215, 215, 0.9)'  // 蜜桃粉
+                        ],
+                        borderWidth: 2,
+                        borderColor: '#FFF'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+
+        // 全局点击自动折叠下拉菜单
+        document.onclick = (e) => {
+            if (!e.target.closest('.custom-dropdown')) {
+                document.querySelectorAll('.custom-dropdown .dropdown-menu').forEach(menu => {
+                    menu.classList.add('hidden');
+                });
+            }
+        };
+
+        // 数据空间自启动函数
+        async function init() {
+            renderHomeHeroes(); // 首页国服英雄绘制
+            await loadBackendData(); // 接口数据拉取
+            initAllDropdowns(); // 过滤器生成
+            updateDashboard(); // 统计展示计算
+        }
+
+        window.addEventListener('DOMContentLoaded', init);
+
+        // 点击“OPEN”营业牌，平滑滚动至下方个人介绍卡片
+        function scrollToProfile() {
+            const profileSection = document.getElementById('profile-section');
+            if (profileSection) {
+                profileSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+    </script>
+</body>
+</html>
