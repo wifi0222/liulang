@@ -336,7 +336,7 @@
                     
                     <!-- 选手照片 -->
                     <div class="w-60 h-72 bg-[#EBF8FF] rounded-lg overflow-hidden border border-[#E2E8F0]">
-                        <img src="static/liulang.png" 
+                        <img src="static/liulang.webp" 
                              alt="KSG 流浪" 
                              onerror="this.onerror=null; this.src='https://via.placeholder.com/300x400/D4ECFC/2B6CB0?text=KSG+Liulang';" 
                              class="w-full h-full object-cover">
@@ -717,7 +717,7 @@
                 return `
                     <div class="flex-shrink-0 w-60 bubble-card p-4 flex flex-col items-center text-center">
                         <div class="w-full h-80 bg-[#EBF8FF] rounded-xl border border-[#BEE3F8] overflow-hidden relative flex items-center justify-center">
-                            <img src="static/${hero.name}.png" 
+                            <img src="static/${hero.name}.webp" 
                                  alt="${hero.name}" 
                                  onerror="this.onerror=null; this.src='https://via.placeholder.com/200x150/EBF8FF/2B6CB0?text=${hero.name}';" 
                                  class="object-cover w-full h-full" />
@@ -735,23 +735,23 @@
 
         // ========================================== PAGE 4: 静态时间轴里程碑数据 ==========================================
         const timelineData = [
-            { id: "1", date: "2021", title: "全国大赛盐城 RC 出战，正式踏入职业赛道", desc: "告别路人高分段，初次站上线下职业赛场，埋下中路追梦种子。", imgs: ["1.png"], isVertical: false },
-            { id: "2", date: "2023.01.04", title: "北京 WB 官宣自留签升入一队大名单", desc: "拿到 KPL 注册选手资格，拥有登上顶级联赛的入场券。", imgs: ["2.png"], isVertical: false },
-            { id: "3", date: "2023 上半年", title: "租借 K 甲 MD 战队，多次拿下全场最佳", desc: "次级联赛打磨节奏与团战，为 KPL 首秀积攒赛场经验。", imgs: ["3.png"], isVertical: false },
-            { id: "4", date: "2023.07.09", title: "KPL 职业生涯首秀", desc: "职业生涯第一场 KPL 正赛，两小局连拿 MVP，险些完成让二追三，一战被观众熟知！", imgs: ["4.png"], isVertical: false },
-            { id: "5", date: "2023.11.13", title: "19岁生日", desc: "身披 WB 队服度过职业第一年生日，仍处于替补轮换阶段。", imgs: ["5.png"], isVertical: true },
-            { id: "6", date: "2024.01.21", title: "官宣从北京 WB 转会苏州 KSG", desc: "职业生涯最重要转折点，告别漫长替补，奔赴 KSG 开启首发核心之路！", imgs: ["6.png"], isVertical: false },
-            { id: "7", date: "2024.07.09", title: "KPL 登场 1 周年纪念", desc: "距离首秀过去一整年，完成转会、首发、闯进总决赛三大跨越。", imgs: ["7.png"], isVertical: false },
-            { id: "8", date: "2024.09.15", title: "2024KPL 夏季赛总决赛・联赛亚军", desc: "带领 KSG 闯入队史首个总决赛，收获亚军，留下遗憾伏笔。", imgs: ["8.png"], isVertical: false },
-            { id: "9", date: "2024.11.10", title: "达成 1000 职业助攻里程碑", desc: "千次助攻见证他兼顾输出与团队拉扯的全能中路特质。", imgs: ["9.png"], isVertical: true },
-            { id: "10", date: "2024.11.13", title: "20岁生日", desc: "转会 KSG 后首个生日，已经完成从替补到决赛中单的蜕变。", imgs: ["10.png"], isVertical: false },
-            { id: "11", date: "2025.07.09", title: "KPL 登场 2 周年纪念", desc: "两年职业路，从新人替补成长为 KSG 绝对核心。", imgs: ["11.png"], isVertical: false },
-            { id: "12", date: "2025.07.10", title: "达成 300 职业总局、500 总击杀双里程碑", desc: "个人赛场数据再创新高，职业生涯对局与击杀双重突破！", imgs: ["12.png", "12(1).png"], isVertical: false },
-            { id: "13", date: "2025.10.03", title: "解锁 200 场职业胜利里程碑", desc: "职业生涯胜场突破 200，胜率稳步提升。", imgs: ["13.png"], isVertical: false },
-            { id: "14", date: "2025.11.13", title: "21 岁生日", desc: "沉淀两年赛场经验，向着冠军全力冲刺。", imgs: ["14.png"], isVertical: false },
-            { id: "15", date: "2026.01.22", title: "达成 400 职业总局里程碑", desc: "职业对局突破 400 场，赛场经验完全拉满。", imgs: ["15.png"], isVertical: true },
-            { id: "16", date: "2026.02.11", title: "达成 2000 职业助攻里程碑", desc: "两千助攻达成，团队型中单价值拉满！", imgs: ["16.png"], isVertical: true },
-            { id: "17", date: "2026.04.11", title: "2026KPL 春季赛总冠军 + FMVP", desc: "4:0 零封对手，拿下 KSG 队史首座银龙杯！包揽三局单局 MVP，加冕 iQOO 总决赛 FMVP，完成多年逆袭圆梦！", imgs: ["17.png", "17(1).png"], isVertical: false }
+            { id: "1", date: "2021", title: "全国大赛盐城 RC 出战，正式踏入职业赛道", desc: "告别路人高分段，初次站上线下职业赛场，埋下中路追梦种子。", imgs: ["1.webp"], isVertical: false },
+            { id: "2", date: "2023.01.04", title: "北京 WB 官宣自留签升入一队大名单", desc: "拿到 KPL 注册选手资格，拥有登上顶级联赛的入场券。", imgs: ["2.webp"], isVertical: false },
+            { id: "3", date: "2023 上半年", title: "租借 K 甲 MD 战队，多次拿下全场最佳", desc: "次级联赛打磨节奏与团战，为 KPL 首秀积攒赛场经验。", imgs: ["3.webp"], isVertical: false },
+            { id: "4", date: "2023.07.09", title: "KPL 职业生涯首秀", desc: "职业生涯第一场 KPL 正赛，两小局连拿 MVP，险些完成让二追三，一战被观众熟知！", imgs: ["4.webp"], isVertical: false },
+            { id: "5", date: "2023.11.13", title: "19岁生日", desc: "身披 WB 队服度过职业第一年生日，仍处于替补轮换阶段。", imgs: ["5.webp"], isVertical: true },
+            { id: "6", date: "2024.01.21", title: "官宣从北京 WB 转会苏州 KSG", desc: "职业生涯最重要转折点，告别漫长替补，奔赴 KSG 开启首发核心之路！", imgs: ["6.webp"], isVertical: false },
+            { id: "7", date: "2024.07.09", title: "KPL 登场 1 周年纪念", desc: "距离首秀过去一整年，完成转会、首发、闯进总决赛三大跨越。", imgs: ["7.webp"], isVertical: false },
+            { id: "8", date: "2024.09.15", title: "2024KPL 夏季赛总决赛・联赛亚军", desc: "带领 KSG 闯入队史首个总决赛，收获亚军，留下遗憾伏笔。", imgs: ["8.webp"], isVertical: false },
+            { id: "9", date: "2024.11.10", title: "达成 1000 职业助攻里程碑", desc: "千次助攻见证他兼顾输出与团队拉扯的全能中路特质。", imgs: ["9.webp"], isVertical: true },
+            { id: "10", date: "2024.11.13", title: "20岁生日", desc: "转会 KSG 后首个生日，已经完成从替补到决赛中单的蜕变。", imgs: ["10.webp"], isVertical: false },
+            { id: "11", date: "2025.07.09", title: "KPL 登场 2 周年纪念", desc: "两年职业路，从新人替补成长为 KSG 绝对核心。", imgs: ["11.webp"], isVertical: false },
+            { id: "12", date: "2025.07.10", title: "达成 300 职业总局、500 总击杀双里程碑", desc: "个人赛场数据再创新高，职业生涯对局与击杀双重突破！", imgs: ["12.webp", "12(1).webp"], isVertical: false },
+            { id: "13", date: "2025.10.03", title: "解锁 200 场职业胜利里程碑", desc: "职业生涯胜场突破 200，胜率稳步提升。", imgs: ["13.webp"], isVertical: false },
+            { id: "14", date: "2025.11.13", title: "21 岁生日", desc: "沉淀两年赛场经验，向着冠军全力冲刺。", imgs: ["14.webp"], isVertical: false },
+            { id: "15", date: "2026.01.22", title: "达成 400 职业总局里程碑", desc: "职业对局突破 400 场，赛场经验完全拉满。", imgs: ["15.webp"], isVertical: true },
+            { id: "16", date: "2026.02.11", title: "达成 2000 职业助攻里程碑", desc: "两千助攻达成，团队型中单价值拉满！", imgs: ["16.webp"], isVertical: true },
+            { id: "17", date: "2026.04.11", title: "2026KPL 春季赛总冠军 + FMVP", desc: "4:0 零封对手，拿下 KSG 队史首座银龙杯！包揽三局单局 MVP，加冕 iQOO 总决赛 FMVP，完成多年逆袭圆梦！", imgs: ["17.webp", "17(1).webp"], isVertical: false }
         ];
 
         // 动态渲染时间轴
