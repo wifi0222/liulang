@@ -11,7 +11,7 @@
         "seq": 1,
         "hero": "弈星",
         "kda": "0/3/4",
-        "duration": "49:00",
+        "duration": "12:49",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -28,7 +28,7 @@
         "seq": 2,
         "hero": "干将莫邪",
         "kda": "1/2/0",
-        "duration": "09:00",
+        "duration": "09:09",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -45,7 +45,7 @@
         "seq": 3,
         "hero": "王昭君",
         "kda": "3/0/8",
-        "duration": "27:00",
+        "duration": "21:27",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -62,7 +62,7 @@
         "seq": 4,
         "hero": "海月",
         "kda": "4/1/7",
-        "duration": "44:00",
+        "duration": "16:44",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -79,7 +79,7 @@
         "seq": 5,
         "hero": "安琪拉",
         "kda": "1/2/1",
-        "duration": "39:00",
+        "duration": "13:39",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -96,7 +96,7 @@
         "seq": 1,
         "hero": "王昭君",
         "kda": "1/2/11",
-        "duration": "42:00",
+        "duration": "14:42",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -113,7 +113,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "0/2/0",
-        "duration": "15:00",
+        "duration": "11:15",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -130,7 +130,7 @@
         "seq": 1,
         "hero": "干将莫邪",
         "kda": "5/1/3",
-        "duration": "46:00",
+        "duration": "01:46",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -147,7 +147,7 @@
         "seq": 2,
         "hero": "弈星",
         "kda": "0/3/5",
-        "duration": "46:00",
+        "duration": "15:46",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -164,7 +164,7 @@
         "seq": 1,
         "hero": "干将莫邪",
         "kda": "1/0/4",
-        "duration": "29:00",
+        "duration": "18:29",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -181,7 +181,7 @@
         "seq": 2,
         "hero": "西施",
         "kda": "0/0/5",
-        "duration": "23:00",
+        "duration": "11:23",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -198,7 +198,7 @@
         "seq": 1,
         "hero": "西施",
         "kda": "1/2/0",
-        "duration": "29:00",
+        "duration": "10:29",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -215,7 +215,7 @@
         "seq": 2,
         "hero": "干将莫邪",
         "kda": "0/1/1",
-        "duration": "16:00",
+        "duration": "17:16",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -232,7 +232,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "2/0/6",
-        "duration": "53:00",
+        "duration": "18:53",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -249,7 +249,7 @@
         "seq": 2,
         "hero": "干将莫邪",
         "kda": "1/1/2",
-        "duration": "36:00",
+        "duration": "15:36",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -266,7 +266,7 @@
         "seq": 3,
         "hero": "上官婉儿",
         "kda": "5/5/6",
-        "duration": "31:00",
+        "duration": "19:31",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -283,7 +283,7 @@
         "seq": 4,
         "hero": "嬴政",
         "kda": "0/0/3",
-        "duration": "05:00",
+        "duration": "17:05",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -300,7 +300,7 @@
         "seq": 5,
         "hero": "弈星",
         "kda": "2/2/1",
-        "duration": "55:00",
+        "duration": "12:55",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -317,7 +317,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "3/3/5",
-        "duration": "41:00",
+        "duration": "17:41",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -334,7 +334,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "3/0/7",
-        "duration": "44:00",
+        "duration": "13:44",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -351,7 +351,7 @@
         "seq": 3,
         "hero": "西施",
         "kda": "1/3/6",
-        "duration": "07:00",
+        "duration": "11:07",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -368,7 +368,7 @@
         "seq": 4,
         "hero": "沈梦溪",
         "kda": "3/0/10",
-        "duration": "05:00",
+        "duration": "15:05",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -385,7 +385,7 @@
         "seq": 1,
         "hero": "西施",
         "kda": "2/0/7",
-        "duration": "50:00",
+        "duration": "17:50",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -402,7 +402,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "1/1/11",
-        "duration": "37:00",
+        "duration": "13:37",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -419,7 +419,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "2/3/8",
-        "duration": "42:00",
+        "duration": "13:42",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -436,7 +436,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "0/3/0",
-        "duration": "09:00",
+        "duration": "14:09",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -453,7 +453,7 @@
         "seq": 2,
         "hero": "海月",
         "kda": "1/3/5",
-        "duration": "50:00",
+        "duration": "23:50",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -470,7 +470,7 @@
         "seq": 3,
         "hero": "王昭君",
         "kda": "2/1/5",
-        "duration": "54:00",
+        "duration": "13:54",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -487,7 +487,7 @@
         "seq": 4,
         "hero": "干将莫邪",
         "kda": "3/3/5",
-        "duration": "52:00",
+        "duration": "21:52",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -504,7 +504,7 @@
         "seq": 5,
         "hero": "嬴政",
         "kda": "4/1/6",
-        "duration": "45:00",
+        "duration": "18:45",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -521,7 +521,7 @@
         "seq": 1,
         "hero": "王昭君",
         "kda": "2/2/7",
-        "duration": "02:00",
+        "duration": "13:02",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -538,7 +538,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "1/3/10",
-        "duration": "51:00",
+        "duration": "15:51",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -555,7 +555,7 @@
         "seq": 3,
         "hero": "海诺",
         "kda": "0/1/3",
-        "duration": "28:00",
+        "duration": "12:28",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -572,7 +572,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "6/0/9",
-        "duration": "31:00",
+        "duration": "20:31",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -589,7 +589,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "4/4/13",
-        "duration": "12:00",
+        "duration": "23:12",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -606,7 +606,7 @@
         "seq": 3,
         "hero": "海诺",
         "kda": "0/3/7",
-        "duration": "16:00",
+        "duration": "16:16",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -623,7 +623,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "1/0/7",
-        "duration": "17:00",
+        "duration": "14:17",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -640,7 +640,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "1/2/4",
-        "duration": "29:00",
+        "duration": "22:29",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -657,7 +657,7 @@
         "seq": 3,
         "hero": "王昭君",
         "kda": "4/0/13",
-        "duration": "43:00",
+        "duration": "11:43",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -674,7 +674,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "0/0/2",
-        "duration": "47:00",
+        "duration": "18:47",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -691,7 +691,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "0/2/3",
-        "duration": "08:00",
+        "duration": "19:08",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -708,7 +708,7 @@
         "seq": 3,
         "hero": "弈星",
         "kda": "1/0/11",
-        "duration": "48:00",
+        "duration": "20:48",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -725,7 +725,7 @@
         "seq": 4,
         "hero": "不知火舞",
         "kda": "1/3/3",
-        "duration": "48:00",
+        "duration": "13:48",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -742,7 +742,7 @@
         "seq": 1,
         "hero": "海诺",
         "kda": "1/4/5",
-        "duration": "56:00",
+        "duration": "15:56",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -759,7 +759,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "3/1/3",
-        "duration": "25:00",
+        "duration": "21:25",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -776,7 +776,7 @@
         "seq": 3,
         "hero": "大乔",
         "kda": "2/3/7",
-        "duration": "26:00",
+        "duration": "19:26",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -793,7 +793,7 @@
         "seq": 4,
         "hero": "海月",
         "kda": "2/2/4",
-        "duration": "47:00",
+        "duration": "10:47",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -810,7 +810,7 @@
         "seq": 5,
         "hero": "貂蝉",
         "kda": "2/3/6",
-        "duration": "53:00",
+        "duration": "16:53",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -827,7 +827,7 @@
         "seq": 6,
         "hero": "王昭君",
         "kda": "2/0/9",
-        "duration": "36:00",
+        "duration": "08:36",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -844,7 +844,7 @@
         "seq": 1,
         "hero": "王昭君",
         "kda": "1/3/0",
-        "duration": "09:00",
+        "duration": "13:09",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -861,7 +861,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "3/0/5",
-        "duration": "22:00",
+        "duration": "14:22",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -878,7 +878,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "3/4/1",
-        "duration": "19:00",
+        "duration": "14:19",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -895,7 +895,7 @@
         "seq": 4,
         "hero": "貂蝉",
         "kda": "0/4/2",
-        "duration": "27:00",
+        "duration": "12:27",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -912,7 +912,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "2/0/4",
-        "duration": "00:00",
+        "duration": "14:00",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -929,7 +929,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "1/4/3",
-        "duration": "49:00",
+        "duration": "14:49",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -946,7 +946,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "2/3/11",
-        "duration": "29:00",
+        "duration": "19:29",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -963,7 +963,7 @@
         "seq": 4,
         "hero": "干将莫邪",
         "kda": "6/1/6",
-        "duration": "31:00",
+        "duration": "18:31",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -980,7 +980,7 @@
         "seq": 1,
         "hero": "大乔",
         "kda": "1/1/7",
-        "duration": "50:00",
+        "duration": "14:50",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -997,7 +997,7 @@
         "seq": 2,
         "hero": "弈星",
         "kda": "1/3/11",
-        "duration": "45:00",
+        "duration": "20:45",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -1014,7 +1014,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "0/4/2",
-        "duration": "05:00",
+        "duration": "14:05",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -1031,7 +1031,7 @@
         "seq": 4,
         "hero": "王昭君",
         "kda": "0/0/4",
-        "duration": "37:00",
+        "duration": "13:37",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1048,7 +1048,7 @@
         "seq": 5,
         "hero": "安琪拉",
         "kda": "5/0/6",
-        "duration": "58:00",
+        "duration": "14:58",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1065,7 +1065,7 @@
         "seq": 1,
         "hero": "甄姬",
         "kda": "1/1/8",
-        "duration": "14:00",
+        "duration": "14:14",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1082,7 +1082,7 @@
         "seq": 2,
         "hero": "干将莫邪",
         "kda": "4/2/3",
-        "duration": "53:00",
+        "duration": "19:53",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -1099,7 +1099,7 @@
         "seq": 3,
         "hero": "弈星",
         "kda": "2/0/10",
-        "duration": "29:00",
+        "duration": "14:29",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1116,7 +1116,7 @@
         "seq": 4,
         "hero": "沈梦溪",
         "kda": "1/1/7",
-        "duration": "26:00",
+        "duration": "13:26",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1133,7 +1133,7 @@
         "seq": 1,
         "hero": "干将莫邪",
         "kda": "7/2/6",
-        "duration": "37:00",
+        "duration": "15:37",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -1150,7 +1150,7 @@
         "seq": 2,
         "hero": "大乔",
         "kda": "1/0/6",
-        "duration": "15:00",
+        "duration": "15:15",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -1167,7 +1167,7 @@
         "seq": 3,
         "hero": "嬴政",
         "kda": "1/2/9",
-        "duration": "59:00",
+        "duration": "14:59",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1184,7 +1184,7 @@
         "seq": 1,
         "hero": "大乔",
         "kda": "0/3/3",
-        "duration": "51:00",
+        "duration": "19:51",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1201,7 +1201,7 @@
         "seq": 2,
         "hero": "墨子",
         "kda": "1/4/4",
-        "duration": "02:00",
+        "duration": "17:02",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1218,7 +1218,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "1/1/2",
-        "duration": "17:00",
+        "duration": "21:17",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1235,7 +1235,7 @@
         "seq": 4,
         "hero": "干将莫邪",
         "kda": "3/2/3",
-        "duration": "07:00",
+        "duration": "20:07",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1252,7 +1252,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "1/2/9",
-        "duration": "08:00",
+        "duration": "12:08",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1269,7 +1269,7 @@
         "seq": 2,
         "hero": "大乔",
         "kda": "2/0/6",
-        "duration": "46:00",
+        "duration": "18:46",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1286,7 +1286,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "0/3/2",
-        "duration": "13:00",
+        "duration": "19:13",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -1303,7 +1303,7 @@
         "seq": 4,
         "hero": "安琪拉",
         "kda": "4/2/2",
-        "duration": "31:00",
+        "duration": "13:31",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1320,7 +1320,7 @@
         "seq": 5,
         "hero": "王昭君",
         "kda": "1/5/3",
-        "duration": "56:00",
+        "duration": "19:56",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -1337,7 +1337,7 @@
         "seq": 6,
         "hero": "弈星",
         "kda": "0/0/10",
-        "duration": "51:00",
+        "duration": "10:51",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -1354,7 +1354,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "4/0/5",
-        "duration": "07:00",
+        "duration": "11:07",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1371,7 +1371,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "5/1/4",
-        "duration": "09:00",
+        "duration": "17:09",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1388,7 +1388,7 @@
         "seq": 3,
         "hero": "弈星",
         "kda": "0/0/13",
-        "duration": "46:00",
+        "duration": "12:46",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1405,7 +1405,7 @@
         "seq": 4,
         "hero": "沈梦溪",
         "kda": "1/1/1",
-        "duration": "17:00",
+        "duration": "22:17",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -1422,7 +1422,7 @@
         "seq": 5,
         "hero": "杨玉环",
         "kda": "2/1/6",
-        "duration": "41:00",
+        "duration": "10:41",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1439,7 +1439,7 @@
         "seq": 1,
         "hero": "王昭君",
         "kda": "0/2/1",
-        "duration": "08:00",
+        "duration": "15:08",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1456,7 +1456,7 @@
         "seq": 2,
         "hero": "安琪拉",
         "kda": "3/4/0",
-        "duration": "18:00",
+        "duration": "12:18",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1473,7 +1473,7 @@
         "seq": 3,
         "hero": "杨玉环",
         "kda": "2/4/3",
-        "duration": "51:00",
+        "duration": "13:51",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1490,7 +1490,7 @@
         "seq": 4,
         "hero": "弈星",
         "kda": "1/3/7",
-        "duration": "35:00",
+        "duration": "16:35",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1507,7 +1507,7 @@
         "seq": 1,
         "hero": "大乔",
         "kda": "0/2/11",
-        "duration": "03:00",
+        "duration": "15:03",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1524,7 +1524,7 @@
         "seq": 2,
         "hero": "安琪拉",
         "kda": "5/0/9",
-        "duration": "30:00",
+        "duration": "12:30",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -1541,7 +1541,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "2/3/1",
-        "duration": "14:00",
+        "duration": "19:14",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -1558,7 +1558,7 @@
         "seq": 4,
         "hero": "海月",
         "kda": "4/2/5",
-        "duration": "53:00",
+        "duration": "16:53",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -1575,7 +1575,7 @@
         "seq": 1,
         "hero": "大乔",
         "kda": "1/2/9",
-        "duration": "29:00",
+        "duration": "14:29",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1592,7 +1592,7 @@
         "seq": 2,
         "hero": "安琪拉",
         "kda": "1/0/4",
-        "duration": "30:00",
+        "duration": "11:30",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1609,7 +1609,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "0/1/3",
-        "duration": "43:00",
+        "duration": "13:43",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1626,7 +1626,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "3/0/7",
-        "duration": "37:00",
+        "duration": "14:37",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1643,7 +1643,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "4/0/7",
-        "duration": "41:00",
+        "duration": "15:41",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1660,7 +1660,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "5/0/4",
-        "duration": "47:00",
+        "duration": "09:47",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -1677,7 +1677,7 @@
         "seq": 1,
         "hero": "王昭君",
         "kda": "0/3/8",
-        "duration": "09:00",
+        "duration": "03:09",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1694,7 +1694,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "2/1/3",
-        "duration": "21:00",
+        "duration": "15:21",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1711,7 +1711,7 @@
         "seq": 3,
         "hero": "弈星",
         "kda": "3/0/7",
-        "duration": "38:00",
+        "duration": "15:38",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1728,7 +1728,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "0/2/0",
-        "duration": "02:00",
+        "duration": "19:02",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1745,7 +1745,7 @@
         "seq": 2,
         "hero": "海诺",
         "kda": "1/1/2",
-        "duration": "18:00",
+        "duration": "17:18",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -1762,7 +1762,7 @@
         "seq": 3,
         "hero": "王昭君",
         "kda": "1/3/6",
-        "duration": "52:00",
+        "duration": "16:52",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1779,7 +1779,7 @@
         "seq": 4,
         "hero": "甄姬",
         "kda": "1/0/8",
-        "duration": "11:00",
+        "duration": "13:11",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -1796,7 +1796,7 @@
         "seq": 5,
         "hero": "安琪拉",
         "kda": "3/0/1",
-        "duration": "49:00",
+        "duration": "15:49",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1813,7 +1813,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "2/1/7",
-        "duration": "11:00",
+        "duration": "14:11",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -1830,7 +1830,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "2/0/8",
-        "duration": "39:00",
+        "duration": "16:39",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -1847,7 +1847,7 @@
         "seq": 3,
         "hero": "王昭君",
         "kda": "0/2/1",
-        "duration": "49:00",
+        "duration": "10:49",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1864,7 +1864,7 @@
         "seq": 4,
         "hero": "不知火舞",
         "kda": "1/3/3",
-        "duration": "17:00",
+        "duration": "19:17",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1881,7 +1881,7 @@
         "seq": 5,
         "hero": "干将莫邪",
         "kda": "1/1/2",
-        "duration": "48:00",
+        "duration": "14:48",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -1898,7 +1898,7 @@
         "seq": 1,
         "hero": "上官婉儿",
         "kda": "6/1/5",
-        "duration": "04:00",
+        "duration": "13:04",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -1915,7 +1915,7 @@
         "seq": 2,
         "hero": "大乔",
         "kda": "3/0/11",
-        "duration": "54:00",
+        "duration": "13:54",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1932,7 +1932,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "2/1/11",
-        "duration": "32:00",
+        "duration": "16:32",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1949,7 +1949,7 @@
         "seq": 1,
         "hero": "杨玉环",
         "kda": "0/1/6",
-        "duration": "44:00",
+        "duration": "15:44",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1966,7 +1966,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "1/0/3",
-        "duration": "00:00",
+        "duration": "14:00",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -1983,7 +1983,7 @@
         "seq": 3,
         "hero": "干将莫邪",
         "kda": "1/1/5",
-        "duration": "51:00",
+        "duration": "15:51",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2000,7 +2000,7 @@
         "seq": 1,
         "hero": "嬴政",
         "kda": "2/1/4",
-        "duration": "56:00",
+        "duration": "12:56",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2017,7 +2017,7 @@
         "seq": 2,
         "hero": "西施",
         "kda": "0/0/11",
-        "duration": "33:00",
+        "duration": "19:33",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -2034,7 +2034,7 @@
         "seq": 3,
         "hero": "海月",
         "kda": "1/3/7",
-        "duration": "03:00",
+        "duration": "15:03",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2051,7 +2051,7 @@
         "seq": 1,
         "hero": "海月",
         "kda": "0/2/1",
-        "duration": "44:00",
+        "duration": "16:44",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2068,7 +2068,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "4/1/3",
-        "duration": "26:00",
+        "duration": "19:26",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2085,7 +2085,7 @@
         "seq": 3,
         "hero": "王昭君",
         "kda": "2/1/8",
-        "duration": "57:00",
+        "duration": "15:57",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2102,7 +2102,7 @@
         "seq": 4,
         "hero": "杨玉环",
         "kda": "4/0/7",
-        "duration": "58:00",
+        "duration": "16:58",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -2119,7 +2119,7 @@
         "seq": 1,
         "hero": "大乔",
         "kda": "1/1/1",
-        "duration": "28:00",
+        "duration": "19:28",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2136,7 +2136,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "1/1/4",
-        "duration": "03:00",
+        "duration": "13:03",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2153,7 +2153,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "3/1/6",
-        "duration": "39:00",
+        "duration": "22:39",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2170,7 +2170,7 @@
         "seq": 4,
         "hero": "不知火舞",
         "kda": "4/2/11",
-        "duration": "31:00",
+        "duration": "19:31",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2187,7 +2187,7 @@
         "seq": 5,
         "hero": "西施",
         "kda": "0/0/8",
-        "duration": "38:00",
+        "duration": "13:38",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2204,7 +2204,7 @@
         "seq": 1,
         "hero": "甄姬",
         "kda": "3/1/4",
-        "duration": "09:00",
+        "duration": "15:09",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2221,7 +2221,7 @@
         "seq": 2,
         "hero": "大乔",
         "kda": "2/6/6",
-        "duration": "33:00",
+        "duration": "22:33",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2238,7 +2238,7 @@
         "seq": 3,
         "hero": "西施",
         "kda": "0/0/2",
-        "duration": "46:00",
+        "duration": "08:46",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2255,7 +2255,7 @@
         "seq": 4,
         "hero": "王昭君",
         "kda": "0/3/0",
-        "duration": "10:00",
+        "duration": "11:10",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2272,7 +2272,7 @@
         "seq": 5,
         "hero": "元流之子",
         "kda": "3/1/6",
-        "duration": "20:00",
+        "duration": "18:20",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2289,7 +2289,7 @@
         "seq": 1,
         "hero": "干将莫邪",
         "kda": "2/2/1",
-        "duration": "25:00",
+        "duration": "17:25",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -2306,7 +2306,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "0/0/2",
-        "duration": "47:00",
+        "duration": "21:47",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -2323,7 +2323,7 @@
         "seq": 3,
         "hero": "西施",
         "kda": "0/2/2",
-        "duration": "36:00",
+        "duration": "12:36",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -2340,7 +2340,7 @@
         "seq": 1,
         "hero": "杨玉环",
         "kda": "1/3/3",
-        "duration": "52:00",
+        "duration": "17:52",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -2357,7 +2357,7 @@
         "seq": 2,
         "hero": "安琪拉",
         "kda": "1/2/3",
-        "duration": "12:00",
+        "duration": "15:12",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -2374,7 +2374,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "0/2/1",
-        "duration": "55:00",
+        "duration": "10:55",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -2391,7 +2391,7 @@
         "seq": 1,
         "hero": "西施",
         "kda": "2/1/9",
-        "duration": "36:00",
+        "duration": "18:36",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -2408,7 +2408,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "0/1/2",
-        "duration": "44:00",
+        "duration": "12:44",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2425,7 +2425,7 @@
         "seq": 3,
         "hero": "王昭君",
         "kda": "2/0/7",
-        "duration": "23:00",
+        "duration": "13:23",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2442,7 +2442,7 @@
         "seq": 4,
         "hero": "海诺",
         "kda": "0/0/11",
-        "duration": "19:00",
+        "duration": "12:19",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2459,7 +2459,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "6/3/5",
-        "duration": "59:00",
+        "duration": "22:59",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2476,7 +2476,7 @@
         "seq": 2,
         "hero": "海月",
         "kda": "0/3/2",
-        "duration": "57:00",
+        "duration": "10:57",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2493,7 +2493,7 @@
         "seq": 3,
         "hero": "嬴政",
         "kda": "4/1/4",
-        "duration": "51:00",
+        "duration": "02:51",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -2510,7 +2510,7 @@
         "seq": 4,
         "hero": "沈梦溪",
         "kda": "0/0/5",
-        "duration": "22:00",
+        "duration": "12:22",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2527,7 +2527,7 @@
         "seq": 5,
         "hero": "海诺",
         "kda": "0/1/6",
-        "duration": "24:00",
+        "duration": "12:24",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2544,7 +2544,7 @@
         "seq": 1,
         "hero": "干将莫邪",
         "kda": "1/2/2",
-        "duration": "50:00",
+        "duration": "13:50",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2561,7 +2561,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "1/1/7",
-        "duration": "39:00",
+        "duration": "13:39",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -2578,7 +2578,7 @@
         "seq": 3,
         "hero": "嬴政",
         "kda": "1/1/9",
-        "duration": "30:00",
+        "duration": "17:30",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2595,7 +2595,7 @@
         "seq": 4,
         "hero": "大乔",
         "kda": "0/2/2",
-        "duration": "27:00",
+        "duration": "17:27",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2612,7 +2612,7 @@
         "seq": 5,
         "hero": "沈梦溪",
         "kda": "1/0/10",
-        "duration": "03:00",
+        "duration": "13:03",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2629,7 +2629,7 @@
         "seq": 6,
         "hero": "西施",
         "kda": "0/2/3",
-        "duration": "01:00",
+        "duration": "11:01",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2646,7 +2646,7 @@
         "seq": 7,
         "hero": "不知火舞",
         "kda": "3/2/12",
-        "duration": "03:00",
+        "duration": "19:03",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -2663,7 +2663,7 @@
         "seq": 1,
         "hero": "西施",
         "kda": "0/3/2",
-        "duration": "27:00",
+        "duration": "15:27",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -2680,7 +2680,7 @@
         "seq": 2,
         "hero": "海诺",
         "kda": "2/2/7",
-        "duration": "23:00",
+        "duration": "19:23",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -2697,7 +2697,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "2/4/2",
-        "duration": "02:00",
+        "duration": "21:02",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -2714,7 +2714,7 @@
         "seq": 4,
         "hero": "甄姬",
         "kda": "1/0/5",
-        "duration": "38:00",
+        "duration": "12:38",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -2731,7 +2731,7 @@
         "seq": 5,
         "hero": "海月",
         "kda": "1/4/2",
-        "duration": "41:00",
+        "duration": "16:41",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -2748,7 +2748,7 @@
         "seq": 1,
         "hero": "甄姬",
         "kda": "1/1/10",
-        "duration": "04:00",
+        "duration": "21:04",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2765,7 +2765,7 @@
         "seq": 2,
         "hero": "嬴政",
         "kda": "2/2/8",
-        "duration": "03:00",
+        "duration": "15:03",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2782,7 +2782,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "1/0/7",
-        "duration": "30:00",
+        "duration": "11:30",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2799,7 +2799,7 @@
         "seq": 1,
         "hero": "王昭君",
         "kda": "1/1/5",
-        "duration": "13:00",
+        "duration": "13:13",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2816,7 +2816,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "0/1/3",
-        "duration": "33:00",
+        "duration": "14:33",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2833,7 +2833,7 @@
         "seq": 3,
         "hero": "大乔",
         "kda": "2/1/7",
-        "duration": "06:00",
+        "duration": "01:06",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2850,7 +2850,7 @@
         "seq": 4,
         "hero": "杨玉环",
         "kda": "3/0/2",
-        "duration": "30:00",
+        "duration": "11:30",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2867,7 +2867,7 @@
         "seq": 1,
         "hero": "甄姬",
         "kda": "2/0/7",
-        "duration": "10:00",
+        "duration": "15:10",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2884,7 +2884,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "2/1/3",
-        "duration": "12:00",
+        "duration": "17:12",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -2901,7 +2901,7 @@
         "seq": 3,
         "hero": "海诺",
         "kda": "0/1/0",
-        "duration": "12:00",
+        "duration": "22:12",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2918,7 +2918,7 @@
         "seq": 4,
         "hero": "安琪拉",
         "kda": "4/0/4",
-        "duration": "41:00",
+        "duration": "19:41",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2935,7 +2935,7 @@
         "seq": 1,
         "hero": "甄姬",
         "kda": "0/0/4",
-        "duration": "15:00",
+        "duration": "14:15",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2952,7 +2952,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "2/0/6",
-        "duration": "26:00",
+        "duration": "23:26",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -2969,7 +2969,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "1/1/1",
-        "duration": "49:00",
+        "duration": "15:49",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -2986,7 +2986,7 @@
         "seq": 4,
         "hero": "周瑜",
         "kda": "2/2/3",
-        "duration": "16:00",
+        "duration": "00:16",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -3003,7 +3003,7 @@
         "seq": 5,
         "hero": "沈梦溪",
         "kda": "0/1/4",
-        "duration": "20:00",
+        "duration": "13:20",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3020,7 +3020,7 @@
         "seq": 1,
         "hero": "王昭君",
         "kda": "0/1/2",
-        "duration": "27:00",
+        "duration": "14:27",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3037,7 +3037,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "3/2/4",
-        "duration": "10:00",
+        "duration": "21:10",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -3054,7 +3054,7 @@
         "seq": 3,
         "hero": "大乔",
         "kda": "0/1/0",
-        "duration": "14:00",
+        "duration": "13:14",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3071,7 +3071,7 @@
         "seq": 4,
         "hero": "甄姬",
         "kda": "1/1/0",
-        "duration": "13:00",
+        "duration": "14:13",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3088,7 +3088,7 @@
         "seq": 1,
         "hero": "王昭君",
         "kda": "0/3/2",
-        "duration": "20:00",
+        "duration": "13:20",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3105,7 +3105,7 @@
         "seq": 2,
         "hero": "安琪拉",
         "kda": "3/1/1",
-        "duration": "50:00",
+        "duration": "15:50",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3122,7 +3122,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "1/3/3",
-        "duration": "54:00",
+        "duration": "15:54",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3139,7 +3139,7 @@
         "seq": 1,
         "hero": "杨玉环",
         "kda": "2/1/4",
-        "duration": "34:00",
+        "duration": "12:34",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3156,7 +3156,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "0/0/4",
-        "duration": "49:00",
+        "duration": "12:49",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3173,7 +3173,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "3/4/4",
-        "duration": "25:00",
+        "duration": "16:25",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -3190,7 +3190,7 @@
         "seq": 4,
         "hero": "海诺",
         "kda": "1/1/6",
-        "duration": "52:00",
+        "duration": "11:52",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3207,7 +3207,7 @@
         "seq": 5,
         "hero": "弈星",
         "kda": "2/1/13",
-        "duration": "37:00",
+        "duration": "12:37",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3224,7 +3224,7 @@
         "seq": 1,
         "hero": "王昭君",
         "kda": "3/2/7",
-        "duration": "47:00",
+        "duration": "15:47",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -3241,7 +3241,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "1/1/2",
-        "duration": "06:00",
+        "duration": "14:06",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -3258,7 +3258,7 @@
         "seq": 3,
         "hero": "海诺",
         "kda": "0/1/5",
-        "duration": "17:00",
+        "duration": "21:17",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3275,7 +3275,7 @@
         "seq": 4,
         "hero": "弈星",
         "kda": "0/1/18",
-        "duration": "40:00",
+        "duration": "14:40",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -3292,7 +3292,7 @@
         "seq": 5,
         "hero": "沈梦溪",
         "kda": "2/1/5",
-        "duration": "36:00",
+        "duration": "13:36",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3309,7 +3309,7 @@
         "seq": 1,
         "hero": "上官婉儿",
         "kda": "0/1/1",
-        "duration": "00:00",
+        "duration": "13:00",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3326,7 +3326,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "3/1/1",
-        "duration": "36:00",
+        "duration": "17:36",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3343,7 +3343,7 @@
         "seq": 3,
         "hero": "弈星",
         "kda": "0/3/1",
-        "duration": "51:00",
+        "duration": "10:51",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3360,7 +3360,7 @@
         "seq": 4,
         "hero": "海诺",
         "kda": "1/0/9",
-        "duration": "12:00",
+        "duration": "18:12",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -3377,7 +3377,7 @@
         "seq": 5,
         "hero": "王昭君",
         "kda": "1/3/3",
-        "duration": "34:00",
+        "duration": "12:34",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3394,7 +3394,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "2/0/6",
-        "duration": "37:00",
+        "duration": "23:37",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -3411,7 +3411,7 @@
         "seq": 2,
         "hero": "干将莫邪",
         "kda": "3/2/5",
-        "duration": "19:00",
+        "duration": "21:19",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -3428,7 +3428,7 @@
         "seq": 3,
         "hero": "安琪拉",
         "kda": "0/2/7",
-        "duration": "14:00",
+        "duration": "15:14",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -3445,7 +3445,7 @@
         "seq": 4,
         "hero": "大乔",
         "kda": "0/2/3",
-        "duration": "28:00",
+        "duration": "13:28",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3462,7 +3462,7 @@
         "seq": 5,
         "hero": "甄姬",
         "kda": "0/2/2",
-        "duration": "27:00",
+        "duration": "16:27",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3479,7 +3479,7 @@
         "seq": 6,
         "hero": "海诺",
         "kda": "0/2/0",
-        "duration": "24:00",
+        "duration": "19:24",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3496,7 +3496,7 @@
         "seq": 7,
         "hero": "王昭君",
         "kda": "1/2/5",
-        "duration": "15:00",
+        "duration": "11:15",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3513,7 +3513,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "4/0/4",
-        "duration": "11:00",
+        "duration": "16:11",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3530,7 +3530,7 @@
         "seq": 2,
         "hero": "女娲",
         "kda": "3/2/5",
-        "duration": "38:00",
+        "duration": "15:38",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -3547,7 +3547,7 @@
         "seq": 1,
         "hero": "海诺",
         "kda": "0/1/8",
-        "duration": "58:00",
+        "duration": "10:58",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3564,7 +3564,7 @@
         "seq": 2,
         "hero": "女娲",
         "kda": "1/1/7",
-        "duration": "08:00",
+        "duration": "13:08",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3581,7 +3581,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "0/1/9",
-        "duration": "55:00",
+        "duration": "12:55",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -3598,7 +3598,7 @@
         "seq": 2,
         "hero": "干将莫邪",
         "kda": "3/1/2",
-        "duration": "45:00",
+        "duration": "15:45",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3615,7 +3615,7 @@
         "seq": 3,
         "hero": "杨玉环",
         "kda": "0/4/8",
-        "duration": "30:00",
+        "duration": "19:30",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3632,7 +3632,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "1/1/5",
-        "duration": "50:00",
+        "duration": "18:50",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3649,7 +3649,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "2/2/5",
-        "duration": "55:00",
+        "duration": "12:55",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3666,7 +3666,7 @@
         "seq": 1,
         "hero": "甄姬",
         "kda": "2/0/3",
-        "duration": "15:00",
+        "duration": "14:15",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3683,7 +3683,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "2/3/5",
-        "duration": "23:00",
+        "duration": "21:23",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3700,7 +3700,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "3/1/5",
-        "duration": "54:00",
+        "duration": "15:54",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3717,7 +3717,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "3/0/11",
-        "duration": "21:00",
+        "duration": "16:21",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3734,7 +3734,7 @@
         "seq": 3,
         "hero": "杨玉环",
         "kda": "0/2/0",
-        "duration": "27:00",
+        "duration": "15:27",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -3751,7 +3751,7 @@
         "seq": 4,
         "hero": "西施",
         "kda": "2/0/9",
-        "duration": "46:00",
+        "duration": "14:46",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -3768,7 +3768,7 @@
         "seq": 5,
         "hero": "王昭君",
         "kda": "0/1/6",
-        "duration": "53:00",
+        "duration": "18:53",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -3785,7 +3785,7 @@
         "seq": 6,
         "hero": "不知火舞",
         "kda": "2/3/5",
-        "duration": "44:00",
+        "duration": "14:44",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3802,7 +3802,7 @@
         "seq": 1,
         "hero": "甄姬",
         "kda": "1/2/9",
-        "duration": "07:00",
+        "duration": "23:07",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3819,7 +3819,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "1/1/6",
-        "duration": "19:00",
+        "duration": "15:19",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3836,7 +3836,7 @@
         "seq": 3,
         "hero": "嬴政",
         "kda": "2/2/1",
-        "duration": "32:00",
+        "duration": "22:32",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -3853,7 +3853,7 @@
         "seq": 4,
         "hero": "安琪拉",
         "kda": "1/1/2",
-        "duration": "13:00",
+        "duration": "21:13",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -3870,7 +3870,7 @@
         "seq": 5,
         "hero": "海月",
         "kda": "4/1/5",
-        "duration": "31:00",
+        "duration": "19:31",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -3887,7 +3887,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "2/2/4",
-        "duration": "16:00",
+        "duration": "17:16",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3904,7 +3904,7 @@
         "seq": 2,
         "hero": "女娲",
         "kda": "0/1/3",
-        "duration": "54:00",
+        "duration": "14:54",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -3921,7 +3921,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "0/1/0",
-        "duration": "25:00",
+        "duration": "13:25",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3938,7 +3938,7 @@
         "seq": 4,
         "hero": "不知火舞",
         "kda": "2/2/8",
-        "duration": "26:00",
+        "duration": "15:26",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -3955,7 +3955,7 @@
         "seq": 5,
         "hero": "甄姬",
         "kda": "0/1/1",
-        "duration": "55:00",
+        "duration": "10:55",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3972,7 +3972,7 @@
         "seq": 6,
         "hero": "杨玉环",
         "kda": "2/1/4",
-        "duration": "07:00",
+        "duration": "15:07",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -3989,7 +3989,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "2/2/5",
-        "duration": "37:00",
+        "duration": "21:37",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4006,7 +4006,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "0/3/4",
-        "duration": "55:00",
+        "duration": "18:55",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4023,7 +4023,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "1/3/4",
-        "duration": "34:00",
+        "duration": "13:34",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4040,7 +4040,7 @@
         "seq": 1,
         "hero": "甄姬",
         "kda": "5/1/4",
-        "duration": "19:00",
+        "duration": "22:19",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -4057,7 +4057,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "2/0/5",
-        "duration": "48:00",
+        "duration": "14:48",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4074,7 +4074,7 @@
         "seq": 3,
         "hero": "嬴政",
         "kda": "2/1/5",
-        "duration": "16:00",
+        "duration": "18:16",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4091,7 +4091,7 @@
         "seq": 1,
         "hero": "女娲",
         "kda": "2/1/2",
-        "duration": "42:00",
+        "duration": "16:42",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -4108,7 +4108,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "1/2/2",
-        "duration": "05:00",
+        "duration": "17:05",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -4125,7 +4125,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "3/0/4",
-        "duration": "59:00",
+        "duration": "22:59",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4142,7 +4142,7 @@
         "seq": 4,
         "hero": "不知火舞",
         "kda": "4/2/11",
-        "duration": "04:00",
+        "duration": "21:04",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4159,7 +4159,7 @@
         "seq": 5,
         "hero": "嫦娥",
         "kda": "3/2/11",
-        "duration": "30:00",
+        "duration": "16:30",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -4176,7 +4176,7 @@
         "seq": 1,
         "hero": "弈星",
         "kda": "4/5/10",
-        "duration": "24:00",
+        "duration": "04:24",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4193,7 +4193,7 @@
         "seq": 2,
         "hero": "女娲",
         "kda": "1/2/6",
-        "duration": "33:00",
+        "duration": "21:33",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4210,7 +4210,7 @@
         "seq": 3,
         "hero": "嬴政",
         "kda": "0/2/4",
-        "duration": "08:00",
+        "duration": "16:08",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4227,7 +4227,7 @@
         "seq": 1,
         "hero": "杨玉环",
         "kda": "2/0/5",
-        "duration": "33:00",
+        "duration": "21:33",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4244,7 +4244,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "1/0/9",
-        "duration": "15:00",
+        "duration": "17:15",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4261,7 +4261,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "1/1/4",
-        "duration": "03:00",
+        "duration": "18:03",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4278,7 +4278,7 @@
         "seq": 1,
         "hero": "甄姬",
         "kda": "3/1/7",
-        "duration": "25:00",
+        "duration": "17:25",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -4295,7 +4295,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "2/0/3",
-        "duration": "12:00",
+        "duration": "19:12",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -4312,7 +4312,7 @@
         "seq": 3,
         "hero": "安琪拉",
         "kda": "2/3/2",
-        "duration": "08:00",
+        "duration": "15:08",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -4329,7 +4329,7 @@
         "seq": 4,
         "hero": "不知火舞",
         "kda": "3/5/3",
-        "duration": "05:00",
+        "duration": "19:05",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4346,7 +4346,7 @@
         "seq": 5,
         "hero": "海诺",
         "kda": "0/0/6",
-        "duration": "23:00",
+        "duration": "21:23",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4363,7 +4363,7 @@
         "seq": 1,
         "hero": "大乔",
         "kda": "1/1/6",
-        "duration": "01:00",
+        "duration": "02:01",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4380,7 +4380,7 @@
         "seq": 2,
         "hero": "嫦娥",
         "kda": "3/3/10",
-        "duration": "59:00",
+        "duration": "15:59",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -4397,7 +4397,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "1/0/10",
-        "duration": "17:00",
+        "duration": "02:17",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -4414,7 +4414,7 @@
         "seq": 4,
         "hero": "海月",
         "kda": "2/2/0",
-        "duration": "04:00",
+        "duration": "21:04",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4431,7 +4431,7 @@
         "seq": 5,
         "hero": "沈梦溪",
         "kda": "1/3/1",
-        "duration": "34:00",
+        "duration": "12:34",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4448,7 +4448,7 @@
         "seq": 1,
         "hero": "甄姬",
         "kda": "4/3/6",
-        "duration": "11:00",
+        "duration": "05:11",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -4465,7 +4465,7 @@
         "seq": 2,
         "hero": "嬴政",
         "kda": "6/0/4",
-        "duration": "08:00",
+        "duration": "16:08",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -4482,7 +4482,7 @@
         "seq": 3,
         "hero": "杨玉环",
         "kda": "0/2/1",
-        "duration": "02:00",
+        "duration": "13:02",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -4499,7 +4499,7 @@
         "seq": 4,
         "hero": "不知火舞",
         "kda": "1/1/6",
-        "duration": "02:00",
+        "duration": "18:02",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4516,7 +4516,7 @@
         "seq": 5,
         "hero": "西施",
         "kda": "0/0/6",
-        "duration": "50:00",
+        "duration": "09:50",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -4533,7 +4533,7 @@
         "seq": 1,
         "hero": "女娲",
         "kda": "0/1/10",
-        "duration": "04:00",
+        "duration": "19:04",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4550,7 +4550,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "3/1/9",
-        "duration": "05:00",
+        "duration": "02:05",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4567,7 +4567,7 @@
         "seq": 3,
         "hero": "西施",
         "kda": "1/2/2",
-        "duration": "19:00",
+        "duration": "18:19",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -4584,7 +4584,7 @@
         "seq": 4,
         "hero": "不知火舞",
         "kda": "2/1/1",
-        "duration": "49:00",
+        "duration": "18:49",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4601,7 +4601,7 @@
         "seq": 1,
         "hero": "甄姬",
         "kda": "2/1/7",
-        "duration": "34:00",
+        "duration": "10:34",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -4618,7 +4618,7 @@
         "seq": 2,
         "hero": "嬴政",
         "kda": "2/3/5",
-        "duration": "54:00",
+        "duration": "19:54",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4635,7 +4635,7 @@
         "seq": 3,
         "hero": "海月",
         "kda": "2/2/1",
-        "duration": "22:00",
+        "duration": "18:22",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4652,7 +4652,7 @@
         "seq": 4,
         "hero": "不知火舞",
         "kda": "0/3/4",
-        "duration": "21:00",
+        "duration": "15:21",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4669,7 +4669,7 @@
         "seq": 1,
         "hero": "大乔",
         "kda": "0/2/8",
-        "duration": "34:00",
+        "duration": "22:34",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4686,7 +4686,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "1/1/3",
-        "duration": "57:00",
+        "duration": "15:57",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -4703,7 +4703,7 @@
         "seq": 3,
         "hero": "嫦娥",
         "kda": "2/1/7",
-        "duration": "33:00",
+        "duration": "12:33",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4720,7 +4720,7 @@
         "seq": 4,
         "hero": "女娲",
         "kda": "4/1/6",
-        "duration": "14:00",
+        "duration": "22:14",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -4737,7 +4737,7 @@
         "seq": 5,
         "hero": "干将莫邪",
         "kda": "3/0/5",
-        "duration": "16:00",
+        "duration": "14:16",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -4754,7 +4754,7 @@
         "seq": 1,
         "hero": "女娲",
         "kda": "1/2/2",
-        "duration": "55:00",
+        "duration": "22:55",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4771,7 +4771,7 @@
         "seq": 2,
         "hero": "西施",
         "kda": "0/0/8",
-        "duration": "43:00",
+        "duration": "14:43",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -4788,7 +4788,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "3/1/1",
-        "duration": "36:00",
+        "duration": "15:36",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4805,7 +4805,7 @@
         "seq": 4,
         "hero": "大乔",
         "kda": "0/3/1",
-        "duration": "09:00",
+        "duration": "13:09",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4822,7 +4822,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "1/2/4",
-        "duration": "14:00",
+        "duration": "15:14",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4839,7 +4839,7 @@
         "seq": 2,
         "hero": "海诺",
         "kda": "0/2/2",
-        "duration": "57:00",
+        "duration": "18:57",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4856,7 +4856,7 @@
         "seq": 3,
         "hero": "西施",
         "kda": "2/0/5",
-        "duration": "07:00",
+        "duration": "14:07",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -4873,7 +4873,7 @@
         "seq": 4,
         "hero": "安琪拉",
         "kda": "1/2/5",
-        "duration": "12:00",
+        "duration": "23:12",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -4890,7 +4890,7 @@
         "seq": 1,
         "hero": "嫦娥",
         "kda": "6/0/4",
-        "duration": "06:00",
+        "duration": "15:06",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4907,7 +4907,7 @@
         "seq": 2,
         "hero": "弈星",
         "kda": "3/0/5",
-        "duration": "17:00",
+        "duration": "13:17",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4924,7 +4924,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "3/1/5",
-        "duration": "10:00",
+        "duration": "14:10",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4941,7 +4941,7 @@
         "seq": 1,
         "hero": "嫦娥",
         "kda": "0/3/3",
-        "duration": "50:00",
+        "duration": "21:50",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -4958,7 +4958,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "1/1/7",
-        "duration": "21:00",
+        "duration": "12:21",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4975,7 +4975,7 @@
         "seq": 3,
         "hero": "西施",
         "kda": "1/2/10",
-        "duration": "30:00",
+        "duration": "13:30",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -4992,7 +4992,7 @@
         "seq": 4,
         "hero": "海月",
         "kda": "3/3/5",
-        "duration": "11:00",
+        "duration": "15:11",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5009,7 +5009,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "0/2/1",
-        "duration": "55:00",
+        "duration": "11:55",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5026,7 +5026,7 @@
         "seq": 2,
         "hero": "海月",
         "kda": "2/0/6",
-        "duration": "47:00",
+        "duration": "12:47",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -5043,7 +5043,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "1/3/8",
-        "duration": "16:00",
+        "duration": "20:16",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -5060,7 +5060,7 @@
         "seq": 4,
         "hero": "姜子牙",
         "kda": "2/2/3",
-        "duration": "42:00",
+        "duration": "15:42",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5077,7 +5077,7 @@
         "seq": 5,
         "hero": "干将莫邪",
         "kda": "2/1/0",
-        "duration": "59:00",
+        "duration": "10:59",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5094,7 +5094,7 @@
         "seq": 6,
         "hero": "嬴政",
         "kda": "4/1/6",
-        "duration": "17:00",
+        "duration": "18:17",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -5111,7 +5111,7 @@
         "seq": 7,
         "hero": "沈梦溪",
         "kda": "0/2/1",
-        "duration": "03:00",
+        "duration": "11:03",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5128,7 +5128,7 @@
         "seq": 1,
         "hero": "干将莫邪",
         "kda": "5/1/3",
-        "duration": "26:00",
+        "duration": "19:26",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -5145,7 +5145,7 @@
         "seq": 2,
         "hero": "安琪拉",
         "kda": "1/0/6",
-        "duration": "40:00",
+        "duration": "11:40",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5162,7 +5162,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "3/1/3",
-        "duration": "35:00",
+        "duration": "15:35",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -5179,7 +5179,7 @@
         "seq": 4,
         "hero": "王昭君",
         "kda": "0/0/5",
-        "duration": "01:00",
+        "duration": "21:01",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5196,7 +5196,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "1/0/6",
-        "duration": "26:00",
+        "duration": "16:26",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5213,7 +5213,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "1/0/5",
-        "duration": "42:00",
+        "duration": "13:42",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5230,7 +5230,7 @@
         "seq": 3,
         "hero": "嫦娥",
         "kda": "0/4/2",
-        "duration": "30:00",
+        "duration": "20:30",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -5247,7 +5247,7 @@
         "seq": 4,
         "hero": "杨玉环",
         "kda": "2/0/7",
-        "duration": "14:00",
+        "duration": "22:14",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5264,7 +5264,7 @@
         "seq": 1,
         "hero": "大乔",
         "kda": "1/2/9",
-        "duration": "12:00",
+        "duration": "23:12",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5281,7 +5281,7 @@
         "seq": 2,
         "hero": "杨玉环",
         "kda": "4/1/1",
-        "duration": "54:00",
+        "duration": "14:54",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5298,7 +5298,7 @@
         "seq": 3,
         "hero": "安琪拉",
         "kda": "0/0/7",
-        "duration": "07:00",
+        "duration": "13:07",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5315,7 +5315,7 @@
         "seq": 1,
         "hero": "海诺",
         "kda": "0/2/1",
-        "duration": "22:00",
+        "duration": "12:22",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -5332,7 +5332,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "2/0/4",
-        "duration": "40:00",
+        "duration": "13:40",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5349,7 +5349,7 @@
         "seq": 3,
         "hero": "王昭君",
         "kda": "0/1/1",
-        "duration": "56:00",
+        "duration": "15:56",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -5366,7 +5366,7 @@
         "seq": 4,
         "hero": "杨玉环",
         "kda": "1/0/4",
-        "duration": "12:00",
+        "duration": "15:12",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5383,7 +5383,7 @@
         "seq": 5,
         "hero": "安琪拉",
         "kda": "3/0/8",
-        "duration": "52:00",
+        "duration": "18:52",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5400,7 +5400,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "1/3/6",
-        "duration": "02:00",
+        "duration": "00:02",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5417,7 +5417,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "0/2/4",
-        "duration": "56:00",
+        "duration": "11:56",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5434,7 +5434,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "1/1/13",
-        "duration": "17:00",
+        "duration": "01:17",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -5451,7 +5451,7 @@
         "seq": 4,
         "hero": "杨玉环",
         "kda": "2/1/8",
-        "duration": "03:00",
+        "duration": "16:03",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -5468,7 +5468,7 @@
         "seq": 5,
         "hero": "嫦娥",
         "kda": "0/2/1",
-        "duration": "54:00",
+        "duration": "14:54",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5485,7 +5485,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "1/1/2",
-        "duration": "48:00",
+        "duration": "15:48",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -5502,7 +5502,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "4/0/5",
-        "duration": "26:00",
+        "duration": "19:26",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5519,7 +5519,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "7/4/6",
-        "duration": "44:00",
+        "duration": "21:44",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -5536,7 +5536,7 @@
         "seq": 4,
         "hero": "嬴政",
         "kda": "4/0/4",
-        "duration": "43:00",
+        "duration": "16:43",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -5553,7 +5553,7 @@
         "seq": 5,
         "hero": "安琪拉",
         "kda": "3/0/3",
-        "duration": "00:00",
+        "duration": "18:00",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5570,7 +5570,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "2/0/4",
-        "duration": "11:00",
+        "duration": "13:11",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -5587,7 +5587,7 @@
         "seq": 2,
         "hero": "海月",
         "kda": "0/1/2",
-        "duration": "07:00",
+        "duration": "13:07",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5604,7 +5604,7 @@
         "seq": 3,
         "hero": "貂蝉",
         "kda": "2/3/1",
-        "duration": "17:00",
+        "duration": "15:17",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5621,7 +5621,7 @@
         "seq": 4,
         "hero": "甄姬",
         "kda": "0/1/5",
-        "duration": "32:00",
+        "duration": "18:32",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5638,7 +5638,7 @@
         "seq": 1,
         "hero": "西施",
         "kda": "3/1/7",
-        "duration": "41:00",
+        "duration": "15:41",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -5655,7 +5655,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "2/0/6",
-        "duration": "42:00",
+        "duration": "15:42",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -5672,7 +5672,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "3/3/3",
-        "duration": "26:00",
+        "duration": "19:26",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -5689,7 +5689,7 @@
         "seq": 4,
         "hero": "嫦娥",
         "kda": "2/2/1",
-        "duration": "51:00",
+        "duration": "14:51",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -5706,7 +5706,7 @@
         "seq": 5,
         "hero": "海诺",
         "kda": "1/0/5",
-        "duration": "26:00",
+        "duration": "11:26",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5723,7 +5723,7 @@
         "seq": 1,
         "hero": "甄姬",
         "kda": "1/1/6",
-        "duration": "48:00",
+        "duration": "14:48",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -5740,7 +5740,7 @@
         "seq": 2,
         "hero": "女娲",
         "kda": "3/2/2",
-        "duration": "56:00",
+        "duration": "16:56",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -5757,7 +5757,7 @@
         "seq": 3,
         "hero": "安琪拉",
         "kda": "1/1/7",
-        "duration": "49:00",
+        "duration": "14:49",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5774,7 +5774,7 @@
         "seq": 4,
         "hero": "沈梦溪",
         "kda": "3/1/7",
-        "duration": "34:00",
+        "duration": "13:34",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5791,7 +5791,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "2/0/4",
-        "duration": "05:00",
+        "duration": "12:05",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5808,7 +5808,7 @@
         "seq": 2,
         "hero": "女娲",
         "kda": "1/0/5",
-        "duration": "55:00",
+        "duration": "14:55",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5825,7 +5825,7 @@
         "seq": 3,
         "hero": "小乔",
         "kda": "1/2/0",
-        "duration": "32:00",
+        "duration": "15:32",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -5842,7 +5842,7 @@
         "seq": 4,
         "hero": "海月",
         "kda": "3/1/6",
-        "duration": "21:00",
+        "duration": "10:21",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -5859,7 +5859,7 @@
         "seq": 1,
         "hero": "小乔",
         "kda": "3/1/4",
-        "duration": "44:00",
+        "duration": "12:44",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -5876,7 +5876,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "0/1/1",
-        "duration": "32:00",
+        "duration": "16:32",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5893,7 +5893,7 @@
         "seq": 3,
         "hero": "女娲",
         "kda": "2/2/1",
-        "duration": "17:00",
+        "duration": "15:17",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5910,7 +5910,7 @@
         "seq": 4,
         "hero": "嬴政",
         "kda": "5/1/5",
-        "duration": "44:00",
+        "duration": "16:44",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -5927,7 +5927,7 @@
         "seq": 5,
         "hero": "安琪拉",
         "kda": "3/2/5",
-        "duration": "30:00",
+        "duration": "22:30",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5944,7 +5944,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "2/0/1",
-        "duration": "09:00",
+        "duration": "14:09",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5961,7 +5961,7 @@
         "seq": 2,
         "hero": "海诺",
         "kda": "1/2/0",
-        "duration": "04:00",
+        "duration": "11:04",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -5978,7 +5978,7 @@
         "seq": 3,
         "hero": "海月",
         "kda": "4/0/4",
-        "duration": "11:00",
+        "duration": "15:11",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -5995,7 +5995,7 @@
         "seq": 4,
         "hero": "小乔",
         "kda": "1/2/12",
-        "duration": "33:00",
+        "duration": "19:33",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6012,7 +6012,7 @@
         "seq": 1,
         "hero": "小乔",
         "kda": "1/0/1",
-        "duration": "07:00",
+        "duration": "14:07",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6029,7 +6029,7 @@
         "seq": 2,
         "hero": "嬴政",
         "kda": "4/2/5",
-        "duration": "15:00",
+        "duration": "21:15",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6046,7 +6046,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "3/1/4",
-        "duration": "39:00",
+        "duration": "14:39",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6063,7 +6063,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "4/1/2",
-        "duration": "53:00",
+        "duration": "10:53",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6080,7 +6080,7 @@
         "seq": 2,
         "hero": "嬴政",
         "kda": "0/0/5",
-        "duration": "35:00",
+        "duration": "11:35",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6097,7 +6097,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "0/2/8",
-        "duration": "12:00",
+        "duration": "21:12",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -6114,7 +6114,7 @@
         "seq": 4,
         "hero": "安琪拉",
         "kda": "1/0/4",
-        "duration": "58:00",
+        "duration": "09:58",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -6131,7 +6131,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "0/1/2",
-        "duration": "54:00",
+        "duration": "19:54",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6148,7 +6148,7 @@
         "seq": 2,
         "hero": "女娲",
         "kda": "3/0/6",
-        "duration": "40:00",
+        "duration": "14:40",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -6165,7 +6165,7 @@
         "seq": 3,
         "hero": "小乔",
         "kda": "0/1/4",
-        "duration": "05:00",
+        "duration": "15:05",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6182,7 +6182,7 @@
         "seq": 4,
         "hero": "大乔",
         "kda": "0/2/3",
-        "duration": "03:00",
+        "duration": "14:03",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6199,7 +6199,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "1/1/8",
-        "duration": "00:00",
+        "duration": "22:00",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6216,7 +6216,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "1/0/2",
-        "duration": "17:00",
+        "duration": "17:17",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -6233,7 +6233,7 @@
         "seq": 3,
         "hero": "嬴政",
         "kda": "0/0/3",
-        "duration": "09:00",
+        "duration": "11:09",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -6250,7 +6250,7 @@
         "seq": 4,
         "hero": "干将莫邪",
         "kda": "3/2/2",
-        "duration": "13:00",
+        "duration": "17:13",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6267,7 +6267,7 @@
         "seq": 5,
         "hero": "海月",
         "kda": "1/0/3",
-        "duration": "52:00",
+        "duration": "16:52",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6284,7 +6284,7 @@
         "seq": 6,
         "hero": "女娲",
         "kda": "3/0/10",
-        "duration": "56:00",
+        "duration": "16:56",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -6301,7 +6301,7 @@
         "seq": 1,
         "hero": "杨玉环",
         "kda": "1/1/3",
-        "duration": "53:00",
+        "duration": "15:53",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -6318,7 +6318,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "1/1/6",
-        "duration": "30:00",
+        "duration": "13:30",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -6335,7 +6335,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "1/0/1",
-        "duration": "18:00",
+        "duration": "15:18",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -6352,7 +6352,7 @@
         "seq": 4,
         "hero": "女娲",
         "kda": "5/0/3",
-        "duration": "30:00",
+        "duration": "21:30",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -6369,7 +6369,7 @@
         "seq": 5,
         "hero": "海月",
         "kda": "1/3/3",
-        "duration": "04:00",
+        "duration": "12:04",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -6386,7 +6386,7 @@
         "seq": 1,
         "hero": "小乔",
         "kda": "1/3/6",
-        "duration": "59:00",
+        "duration": "17:59",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6403,7 +6403,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "0/3/0",
-        "duration": "26:00",
+        "duration": "11:26",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6420,7 +6420,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "0/0/7",
-        "duration": "11:00",
+        "duration": "11:11",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -6437,7 +6437,7 @@
         "seq": 4,
         "hero": "海月",
         "kda": "0/2/3",
-        "duration": "05:00",
+        "duration": "18:05",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6454,7 +6454,7 @@
         "seq": 1,
         "hero": "女娲",
         "kda": "2/3/7",
-        "duration": "33:00",
+        "duration": "20:33",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -6471,7 +6471,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "0/3/3",
-        "duration": "53:00",
+        "duration": "16:53",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6488,7 +6488,7 @@
         "seq": 3,
         "hero": "小乔",
         "kda": "2/1/7",
-        "duration": "25:00",
+        "duration": "15:25",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -6505,7 +6505,7 @@
         "seq": 4,
         "hero": "安琪拉",
         "kda": "0/3/0",
-        "duration": "15:00",
+        "duration": "16:15",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6522,7 +6522,7 @@
         "seq": 5,
         "hero": "嬴政",
         "kda": "0/0/2",
-        "duration": "19:00",
+        "duration": "14:19",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6539,7 +6539,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "0/0/1",
-        "duration": "34:00",
+        "duration": "11:34",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6556,7 +6556,7 @@
         "seq": 2,
         "hero": "女娲",
         "kda": "2/1/6",
-        "duration": "12:00",
+        "duration": "20:12",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6573,7 +6573,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "2/1/9",
-        "duration": "54:00",
+        "duration": "18:54",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6590,7 +6590,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "1/1/3",
-        "duration": "52:00",
+        "duration": "14:52",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6607,7 +6607,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "1/2/3",
-        "duration": "10:00",
+        "duration": "15:10",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6624,7 +6624,7 @@
         "seq": 3,
         "hero": "女娲",
         "kda": "3/3/4",
-        "duration": "47:00",
+        "duration": "17:47",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6641,7 +6641,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "0/3/8",
-        "duration": "27:00",
+        "duration": "17:27",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6658,7 +6658,7 @@
         "seq": 2,
         "hero": "小乔",
         "kda": "0/1/3",
-        "duration": "32:00",
+        "duration": "18:32",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6675,7 +6675,7 @@
         "seq": 3,
         "hero": "女娲",
         "kda": "3/0/6",
-        "duration": "23:00",
+        "duration": "21:23",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -6692,7 +6692,7 @@
         "seq": 4,
         "hero": "甄姬",
         "kda": "1/0/11",
-        "duration": "40:00",
+        "duration": "14:40",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -6709,7 +6709,7 @@
         "seq": 5,
         "hero": "沈梦溪",
         "kda": "1/0/0",
-        "duration": "39:00",
+        "duration": "11:39",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6726,7 +6726,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "4/0/0",
-        "duration": "36:00",
+        "duration": "17:36",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -6743,7 +6743,7 @@
         "seq": 2,
         "hero": "嬴政",
         "kda": "1/1/6",
-        "duration": "14:00",
+        "duration": "18:14",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -6760,7 +6760,7 @@
         "seq": 3,
         "hero": "女娲",
         "kda": "3/1/4",
-        "duration": "35:00",
+        "duration": "18:35",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -6777,7 +6777,7 @@
         "seq": 4,
         "hero": "甄姬",
         "kda": "0/1/6",
-        "duration": "52:00",
+        "duration": "18:52",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6794,7 +6794,7 @@
         "seq": 1,
         "hero": "小乔",
         "kda": "3/0/3",
-        "duration": "13:00",
+        "duration": "21:13",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -6811,7 +6811,7 @@
         "seq": 1,
         "hero": "干将莫邪",
         "kda": "0/2/0",
-        "duration": "24:00",
+        "duration": "11:24",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -6828,7 +6828,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "2/1/5",
-        "duration": "28:00",
+        "duration": "15:28",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6845,7 +6845,7 @@
         "seq": 3,
         "hero": "女娲",
         "kda": "4/0/4",
-        "duration": "19:00",
+        "duration": "11:19",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -6862,7 +6862,7 @@
         "seq": 4,
         "hero": "王昭君",
         "kda": "1/0/15",
-        "duration": "21:00",
+        "duration": "21:21",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -6879,7 +6879,7 @@
         "seq": 5,
         "hero": "不知火舞",
         "kda": "0/1/1",
-        "duration": "11:00",
+        "duration": "08:11",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -6896,7 +6896,7 @@
         "seq": 6,
         "hero": "小乔",
         "kda": "1/3/7",
-        "duration": "04:00",
+        "duration": "22:04",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -6913,7 +6913,7 @@
         "seq": 1,
         "hero": "西施",
         "kda": "0/1/4",
-        "duration": "32:00",
+        "duration": "16:32",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6930,7 +6930,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "4/0/5",
-        "duration": "25:00",
+        "duration": "13:25",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6947,7 +6947,7 @@
         "seq": 3,
         "hero": "海诺",
         "kda": "1/1/1",
-        "duration": "33:00",
+        "duration": "17:33",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -6964,7 +6964,7 @@
         "seq": 4,
         "hero": "女娲",
         "kda": "2/1/10",
-        "duration": "08:00",
+        "duration": "16:08",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6981,7 +6981,7 @@
         "seq": 5,
         "hero": "甄姬",
         "kda": "2/0/4",
-        "duration": "45:00",
+        "duration": "15:45",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -6998,7 +6998,7 @@
         "seq": 1,
         "hero": "武则天",
         "kda": "2/1/11",
-        "duration": "30:00",
+        "duration": "22:30",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -7015,7 +7015,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "0/1/5",
-        "duration": "50:00",
+        "duration": "14:50",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7032,7 +7032,7 @@
         "seq": 3,
         "hero": "安琪拉",
         "kda": "1/0/0",
-        "duration": "45:00",
+        "duration": "12:45",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -7049,7 +7049,7 @@
         "seq": 4,
         "hero": "女娲",
         "kda": "1/2/2",
-        "duration": "04:00",
+        "duration": "22:04",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7066,7 +7066,7 @@
         "seq": 5,
         "hero": "王昭君",
         "kda": "0/3/7",
-        "duration": "30:00",
+        "duration": "20:30",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7083,7 +7083,7 @@
         "seq": 6,
         "hero": "嬴政",
         "kda": "2/1/11",
-        "duration": "08:00",
+        "duration": "22:08",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -7100,7 +7100,7 @@
         "seq": 7,
         "hero": "女娲",
         "kda": "0/0/0",
-        "duration": "40:00",
+        "duration": "16:40",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7117,7 +7117,7 @@
         "seq": 1,
         "hero": "小乔",
         "kda": "0/1/1",
-        "duration": "26:00",
+        "duration": "11:26",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7134,7 +7134,7 @@
         "seq": 2,
         "hero": "嬴政",
         "kda": "3/1/1",
-        "duration": "33:00",
+        "duration": "20:33",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7151,7 +7151,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "4/1/6",
-        "duration": "26:00",
+        "duration": "21:26",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -7168,7 +7168,7 @@
         "seq": 4,
         "hero": "女娲",
         "kda": "1/2/2",
-        "duration": "55:00",
+        "duration": "15:55",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7185,7 +7185,7 @@
         "seq": 5,
         "hero": "不知火舞",
         "kda": "2/2/3",
-        "duration": "10:00",
+        "duration": "15:10",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7202,7 +7202,7 @@
         "seq": 1,
         "hero": "杨玉环",
         "kda": "4/0/5",
-        "duration": "13:00",
+        "duration": "15:13",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7219,7 +7219,7 @@
         "seq": 2,
         "hero": "嫦娥",
         "kda": "0/1/4",
-        "duration": "19:00",
+        "duration": "18:19",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7236,7 +7236,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "1/0/7",
-        "duration": "46:00",
+        "duration": "13:46",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7253,7 +7253,7 @@
         "seq": 1,
         "hero": "海诺",
         "kda": "4/2/2",
-        "duration": "51:00",
+        "duration": "18:51",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -7270,7 +7270,7 @@
         "seq": 2,
         "hero": "安琪拉",
         "kda": "1/1/7",
-        "duration": "26:00",
+        "duration": "11:26",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7287,7 +7287,7 @@
         "seq": 3,
         "hero": "西施",
         "kda": "2/1/10",
-        "duration": "29:00",
+        "duration": "17:29",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7304,7 +7304,7 @@
         "seq": 4,
         "hero": "甄姬",
         "kda": "3/1/7",
-        "duration": "53:00",
+        "duration": "15:53",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7321,7 +7321,7 @@
         "seq": 5,
         "hero": "小乔",
         "kda": "3/3/11",
-        "duration": "06:00",
+        "duration": "13:06",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7338,7 +7338,7 @@
         "seq": 1,
         "hero": "女娲",
         "kda": "4/0/5",
-        "duration": "37:00",
+        "duration": "14:37",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -7355,7 +7355,7 @@
         "seq": 2,
         "hero": "杨玉环",
         "kda": "0/2/1",
-        "duration": "07:00",
+        "duration": "15:07",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7372,7 +7372,7 @@
         "seq": 3,
         "hero": "西施",
         "kda": "1/2/3",
-        "duration": "00:00",
+        "duration": "14:00",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7389,7 +7389,7 @@
         "seq": 4,
         "hero": "沈梦溪",
         "kda": "2/0/8",
-        "duration": "28:00",
+        "duration": "12:28",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -7406,7 +7406,7 @@
         "seq": 5,
         "hero": "嫦娥",
         "kda": "1/0/2",
-        "duration": "06:00",
+        "duration": "13:06",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -7423,7 +7423,7 @@
         "seq": 6,
         "hero": "甄姬",
         "kda": "0/1/6",
-        "duration": "22:00",
+        "duration": "16:22",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7440,7 +7440,7 @@
         "seq": 7,
         "hero": "沈梦溪",
         "kda": "2/1/6",
-        "duration": "13:00",
+        "duration": "15:13",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7457,7 +7457,7 @@
         "seq": 1,
         "hero": "王昭君",
         "kda": "1/0/6",
-        "duration": "25:00",
+        "duration": "16:25",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -7474,7 +7474,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "5/3/2",
-        "duration": "56:00",
+        "duration": "14:56",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7491,7 +7491,7 @@
         "seq": 3,
         "hero": "海月",
         "kda": "3/1/5",
-        "duration": "33:00",
+        "duration": "11:33",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -7508,7 +7508,7 @@
         "seq": 4,
         "hero": "干将莫邪",
         "kda": "2/2/7",
-        "duration": "10:00",
+        "duration": "18:10",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7525,7 +7525,7 @@
         "seq": 5,
         "hero": "貂蝉",
         "kda": "0/2/1",
-        "duration": "39:00",
+        "duration": "14:39",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7542,7 +7542,7 @@
         "seq": 6,
         "hero": "安琪拉",
         "kda": "1/1/2",
-        "duration": "01:00",
+        "duration": "14:01",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7559,7 +7559,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "2/0/4",
-        "duration": "29:00",
+        "duration": "12:29",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7576,7 +7576,7 @@
         "seq": 2,
         "hero": "海月",
         "kda": "1/1/3",
-        "duration": "56:00",
+        "duration": "22:56",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7593,7 +7593,7 @@
         "seq": 3,
         "hero": "安琪拉",
         "kda": "2/1/0",
-        "duration": "48:00",
+        "duration": "20:48",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -7610,7 +7610,7 @@
         "seq": 4,
         "hero": "女娲",
         "kda": "2/0/4",
-        "duration": "11:00",
+        "duration": "11:11",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7627,7 +7627,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "1/1/6",
-        "duration": "21:00",
+        "duration": "16:21",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7644,7 +7644,7 @@
         "seq": 2,
         "hero": "海月",
         "kda": "1/3/2",
-        "duration": "59:00",
+        "duration": "11:59",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -7661,7 +7661,7 @@
         "seq": 3,
         "hero": "杨玉环",
         "kda": "1/1/3",
-        "duration": "24:00",
+        "duration": "13:24",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -7678,7 +7678,7 @@
         "seq": 4,
         "hero": "王昭君",
         "kda": "2/1/6",
-        "duration": "47:00",
+        "duration": "11:47",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7695,7 +7695,7 @@
         "seq": 5,
         "hero": "甄姬",
         "kda": "1/0/8",
-        "duration": "27:00",
+        "duration": "16:27",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7712,7 +7712,7 @@
         "seq": 1,
         "hero": "嬴政",
         "kda": "1/3/3",
-        "duration": "00:00",
+        "duration": "22:00",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7729,7 +7729,7 @@
         "seq": 2,
         "hero": "嫦娥",
         "kda": "3/2/5",
-        "duration": "40:00",
+        "duration": "15:40",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -7746,7 +7746,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "1/2/5",
-        "duration": "30:00",
+        "duration": "18:30",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7763,7 +7763,7 @@
         "seq": 4,
         "hero": "女娲",
         "kda": "2/1/4",
-        "duration": "11:00",
+        "duration": "14:11",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -7780,7 +7780,7 @@
         "seq": 5,
         "hero": "海月",
         "kda": "0/1/1",
-        "duration": "09:00",
+        "duration": "12:09",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7797,7 +7797,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "1/2/8",
-        "duration": "36:00",
+        "duration": "17:36",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7814,7 +7814,7 @@
         "seq": 2,
         "hero": "女娲",
         "kda": "1/1/6",
-        "duration": "56:00",
+        "duration": "10:56",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7831,7 +7831,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "2/1/7",
-        "duration": "08:00",
+        "duration": "19:08",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7848,7 +7848,7 @@
         "seq": 1,
         "hero": "小乔",
         "kda": "1/1/4",
-        "duration": "51:00",
+        "duration": "12:51",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7865,7 +7865,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "0/0/5",
-        "duration": "23:00",
+        "duration": "09:23",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7882,7 +7882,7 @@
         "seq": 3,
         "hero": "女娲",
         "kda": "1/1/3",
-        "duration": "39:00",
+        "duration": "12:39",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7899,7 +7899,7 @@
         "seq": 1,
         "hero": "西施",
         "kda": "1/0/8",
-        "duration": "28:00",
+        "duration": "15:28",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -7916,7 +7916,7 @@
         "seq": 2,
         "hero": "女娲",
         "kda": "6/1/2",
-        "duration": "46:00",
+        "duration": "10:46",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -7933,7 +7933,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "1/1/8",
-        "duration": "07:00",
+        "duration": "16:07",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -7950,7 +7950,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "0/3/4",
-        "duration": "08:00",
+        "duration": "16:08",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7967,7 +7967,7 @@
         "seq": 2,
         "hero": "王昭君",
         "kda": "0/3/3",
-        "duration": "38:00",
+        "duration": "13:38",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -7984,7 +7984,7 @@
         "seq": 3,
         "hero": "海月",
         "kda": "0/1/2",
-        "duration": "41:00",
+        "duration": "15:41",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8001,7 +8001,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "0/2/4",
-        "duration": "50:00",
+        "duration": "21:50",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -8018,7 +8018,7 @@
         "seq": 2,
         "hero": "小乔",
         "kda": "4/3/7",
-        "duration": "53:00",
+        "duration": "01:53",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8035,7 +8035,7 @@
         "seq": 3,
         "hero": "金蝉",
         "kda": "0/1/0",
-        "duration": "41:00",
+        "duration": "13:41",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8052,7 +8052,7 @@
         "seq": 4,
         "hero": "女娲",
         "kda": "4/0/10",
-        "duration": "25:00",
+        "duration": "11:25",
         "result": "胜",
         "mvp": true,
         "isMatchWin": false
@@ -8069,7 +8069,7 @@
         "seq": 5,
         "hero": "沈梦溪",
         "kda": "0/1/1",
-        "duration": "00:00",
+        "duration": "12:00",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8086,7 +8086,7 @@
         "seq": 1,
         "hero": "西施",
         "kda": "0/0/6",
-        "duration": "10:00",
+        "duration": "14:10",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -8103,7 +8103,7 @@
         "seq": 2,
         "hero": "不知火舞",
         "kda": "1/2/6",
-        "duration": "12:00",
+        "duration": "14:12",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8120,7 +8120,7 @@
         "seq": 3,
         "hero": "嫦娥",
         "kda": "0/2/2",
-        "duration": "24:00",
+        "duration": "16:24",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -8137,7 +8137,7 @@
         "seq": 4,
         "hero": "女娲",
         "kda": "1/0/0",
-        "duration": "57:00",
+        "duration": "12:57",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -8154,7 +8154,7 @@
         "seq": 5,
         "hero": "甄姬",
         "kda": "2/1/8",
-        "duration": "03:00",
+        "duration": "19:03",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -8171,7 +8171,7 @@
         "seq": 1,
         "hero": "武则天",
         "kda": "3/0/7",
-        "duration": "49:00",
+        "duration": "11:49",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8188,7 +8188,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "1/0/3",
-        "duration": "10:00",
+        "duration": "21:10",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8205,7 +8205,7 @@
         "seq": 3,
         "hero": "不知火舞",
         "kda": "1/2/7",
-        "duration": "10:00",
+        "duration": "20:10",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -8222,7 +8222,7 @@
         "seq": 4,
         "hero": "女娲",
         "kda": "1/0/10",
-        "duration": "29:00",
+        "duration": "20:29",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8239,7 +8239,7 @@
         "seq": 1,
         "hero": "西施",
         "kda": "0/0/14",
-        "duration": "30:00",
+        "duration": "18:30",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8256,7 +8256,7 @@
         "seq": 2,
         "hero": "嫦娥",
         "kda": "0/1/0",
-        "duration": "32:00",
+        "duration": "15:32",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -8273,7 +8273,7 @@
         "seq": 3,
         "hero": "女娲",
         "kda": "2/0/4",
-        "duration": "04:00",
+        "duration": "13:04",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8290,7 +8290,7 @@
         "seq": 4,
         "hero": "安琪拉",
         "kda": "1/3/9",
-        "duration": "51:00",
+        "duration": "15:51",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8307,7 +8307,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "2/0/5",
-        "duration": "45:00",
+        "duration": "17:45",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -8324,7 +8324,7 @@
         "seq": 2,
         "hero": "武则天",
         "kda": "2/0/0",
-        "duration": "06:00",
+        "duration": "15:06",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8341,7 +8341,7 @@
         "seq": 3,
         "hero": "小乔",
         "kda": "1/1/6",
-        "duration": "44:00",
+        "duration": "18:44",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8358,7 +8358,7 @@
         "seq": 4,
         "hero": "海诺",
         "kda": "0/0/5",
-        "duration": "11:00",
+        "duration": "12:11",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -8375,7 +8375,7 @@
         "seq": 5,
         "hero": "王昭君",
         "kda": "2/3/0",
-        "duration": "15:00",
+        "duration": "13:15",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8392,7 +8392,7 @@
         "seq": 1,
         "hero": "武则天",
         "kda": "0/1/1",
-        "duration": "56:00",
+        "duration": "19:56",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -8409,7 +8409,7 @@
         "seq": 2,
         "hero": "安琪拉",
         "kda": "3/0/3",
-        "duration": "23:00",
+        "duration": "13:23",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8426,7 +8426,7 @@
         "seq": 3,
         "hero": "嫦娥",
         "kda": "1/0/7",
-        "duration": "29:00",
+        "duration": "15:29",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8443,7 +8443,7 @@
         "seq": 4,
         "hero": "嬴政",
         "kda": "2/0/5",
-        "duration": "49:00",
+        "duration": "09:49",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8460,7 +8460,7 @@
         "seq": 1,
         "hero": "嫦娥",
         "kda": "0/3/10",
-        "duration": "04:00",
+        "duration": "02:04",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -8477,7 +8477,7 @@
         "seq": 2,
         "hero": "西施",
         "kda": "2/3/3",
-        "duration": "23:00",
+        "duration": "17:23",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8494,7 +8494,7 @@
         "seq": 3,
         "hero": "安琪拉",
         "kda": "3/1/9",
-        "duration": "52:00",
+        "duration": "14:52",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -8511,7 +8511,7 @@
         "seq": 4,
         "hero": "女娲",
         "kda": "0/1/4",
-        "duration": "50:00",
+        "duration": "21:50",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8528,7 +8528,7 @@
         "seq": 5,
         "hero": "武则天",
         "kda": "0/0/1",
-        "duration": "05:00",
+        "duration": "15:05",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8545,7 +8545,7 @@
         "seq": 1,
         "hero": "嫦娥",
         "kda": "0/0/3",
-        "duration": "02:00",
+        "duration": "13:02",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8562,7 +8562,7 @@
         "seq": 2,
         "hero": "女娲",
         "kda": "1/0/8",
-        "duration": "07:00",
+        "duration": "13:07",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8579,7 +8579,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "0/0/3",
-        "duration": "31:00",
+        "duration": "21:31",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -8596,7 +8596,7 @@
         "seq": 4,
         "hero": "西施",
         "kda": "3/0/9",
-        "duration": "16:00",
+        "duration": "10:16",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8613,7 +8613,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "2/0/5",
-        "duration": "53:00",
+        "duration": "18:53",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -8630,7 +8630,7 @@
         "seq": 2,
         "hero": "武则天",
         "kda": "0/0/6",
-        "duration": "55:00",
+        "duration": "10:55",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -8647,7 +8647,7 @@
         "seq": 3,
         "hero": "海月",
         "kda": "2/1/6",
-        "duration": "40:00",
+        "duration": "13:40",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -8664,7 +8664,7 @@
         "seq": 4,
         "hero": "王昭君",
         "kda": "1/3/6",
-        "duration": "39:00",
+        "duration": "14:39",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8681,7 +8681,7 @@
         "seq": 5,
         "hero": "海诺",
         "kda": "2/4/1",
-        "duration": "57:00",
+        "duration": "15:57",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8698,7 +8698,7 @@
         "seq": 6,
         "hero": "女娲",
         "kda": "0/2/0",
-        "duration": "01:00",
+        "duration": "16:01",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8715,7 +8715,7 @@
         "seq": 7,
         "hero": "沈梦溪",
         "kda": "0/0/3",
-        "duration": "52:00",
+        "duration": "14:52",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -8732,7 +8732,7 @@
         "seq": 1,
         "hero": "女娲",
         "kda": "0/0/3",
-        "duration": "11:00",
+        "duration": "14:11",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -8749,7 +8749,7 @@
         "seq": 2,
         "hero": "小乔",
         "kda": "3/0/9",
-        "duration": "09:00",
+        "duration": "15:09",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8766,7 +8766,7 @@
         "seq": 3,
         "hero": "嫦娥",
         "kda": "0/0/3",
-        "duration": "37:00",
+        "duration": "15:37",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8783,7 +8783,7 @@
         "seq": 4,
         "hero": "沈梦溪",
         "kda": "1/0/7",
-        "duration": "36:00",
+        "duration": "14:36",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8800,7 +8800,7 @@
         "seq": 5,
         "hero": "不知火舞",
         "kda": "4/1/7",
-        "duration": "44:00",
+        "duration": "15:44",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8817,7 +8817,7 @@
         "seq": 1,
         "hero": "小乔",
         "kda": "1/1/11",
-        "duration": "56:00",
+        "duration": "20:56",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8834,7 +8834,7 @@
         "seq": 2,
         "hero": "沈梦溪",
         "kda": "1/0/4",
-        "duration": "22:00",
+        "duration": "13:22",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8851,7 +8851,7 @@
         "seq": 3,
         "hero": "甄姬",
         "kda": "0/0/1",
-        "duration": "38:00",
+        "duration": "18:38",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -8868,7 +8868,7 @@
         "seq": 4,
         "hero": "武则天",
         "kda": "1/0/4",
-        "duration": "13:00",
+        "duration": "09:13",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -8885,7 +8885,7 @@
         "seq": 5,
         "hero": "女娲",
         "kda": "1/0/3",
-        "duration": "51:00",
+        "duration": "15:51",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -8902,7 +8902,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "1/1/1",
-        "duration": "00:00",
+        "duration": "13:00",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -8919,7 +8919,7 @@
         "seq": 2,
         "hero": "西施",
         "kda": "0/1/6",
-        "duration": "46:00",
+        "duration": "13:46",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8936,7 +8936,7 @@
         "seq": 3,
         "hero": "小乔",
         "kda": "1/0/8",
-        "duration": "57:00",
+        "duration": "14:57",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8953,7 +8953,7 @@
         "seq": 4,
         "hero": "安琪拉",
         "kda": "4/1/4",
-        "duration": "15:00",
+        "duration": "12:15",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -8970,7 +8970,7 @@
         "seq": 5,
         "hero": "海月",
         "kda": "1/4/6",
-        "duration": "48:00",
+        "duration": "23:48",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -8987,7 +8987,7 @@
         "seq": 6,
         "hero": "武则天",
         "kda": "1/0/8",
-        "duration": "46:00",
+        "duration": "22:46",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -9004,7 +9004,7 @@
         "seq": 1,
         "hero": "沈梦溪",
         "kda": "3/0/6",
-        "duration": "16:00",
+        "duration": "12:16",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -9021,7 +9021,7 @@
         "seq": 2,
         "hero": "海月",
         "kda": "5/1/7",
-        "duration": "35:00",
+        "duration": "15:35",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -9038,7 +9038,7 @@
         "seq": 3,
         "hero": "安琪拉",
         "kda": "4/1/8",
-        "duration": "48:00",
+        "duration": "19:48",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -9055,7 +9055,7 @@
         "seq": 4,
         "hero": "武则天",
         "kda": "1/1/8",
-        "duration": "50:00",
+        "duration": "18:50",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -9072,7 +9072,7 @@
         "seq": 1,
         "hero": "武则天",
         "kda": "1/1/3",
-        "duration": "55:00",
+        "duration": "13:55",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -9089,7 +9089,7 @@
         "seq": 2,
         "hero": "小乔",
         "kda": "0/2/2",
-        "duration": "21:00",
+        "duration": "12:21",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -9106,7 +9106,7 @@
         "seq": 3,
         "hero": "嬴政",
         "kda": "1/0/5",
-        "duration": "39:00",
+        "duration": "14:39",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -9123,7 +9123,7 @@
         "seq": 4,
         "hero": "沈梦溪",
         "kda": "3/1/6",
-        "duration": "40:00",
+        "duration": "21:40",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -9140,7 +9140,7 @@
         "seq": 1,
         "hero": "不知火舞",
         "kda": "0/6/6",
-        "duration": "33:00",
+        "duration": "23:33",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -9157,7 +9157,7 @@
         "seq": 2,
         "hero": "嬴政",
         "kda": "0/0/5",
-        "duration": "15:00",
+        "duration": "16:15",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -9174,7 +9174,7 @@
         "seq": 3,
         "hero": "姜子牙",
         "kda": "2/0/14",
-        "duration": "05:00",
+        "duration": "23:05",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -9191,7 +9191,7 @@
         "seq": 1,
         "hero": "海月",
         "kda": "5/0/6",
-        "duration": "24:00",
+        "duration": "18:24",
         "result": "胜",
         "mvp": false,
         "isMatchWin": false
@@ -9208,7 +9208,7 @@
         "seq": 2,
         "hero": "甄姬",
         "kda": "0/0/1",
-        "duration": "06:00",
+        "duration": "12:06",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -9225,7 +9225,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "2/2/3",
-        "duration": "18:00",
+        "duration": "17:18",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -9242,7 +9242,7 @@
         "seq": 4,
         "hero": "不知火舞",
         "kda": "2/4/2",
-        "duration": "10:00",
+        "duration": "22:10",
         "result": "负",
         "mvp": false,
         "isMatchWin": false
@@ -9259,7 +9259,7 @@
         "seq": 1,
         "hero": "海月",
         "kda": "1/1/7",
-        "duration": "07:00",
+        "duration": "12:07",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -9276,7 +9276,7 @@
         "seq": 2,
         "hero": "武则天",
         "kda": "4/0/8",
-        "duration": "33:00",
+        "duration": "16:33",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -9293,7 +9293,7 @@
         "seq": 3,
         "hero": "沈梦溪",
         "kda": "1/0/4",
-        "duration": "22:00",
+        "duration": "15:22",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -9310,7 +9310,7 @@
         "seq": 1,
         "hero": "安琪拉",
         "kda": "2/0/6",
-        "duration": "37:00",
+        "duration": "14:37",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -9327,7 +9327,7 @@
         "seq": 2,
         "hero": "嬴政",
         "kda": "0/0/0",
-        "duration": "34:00",
+        "duration": "11:34",
         "result": "负",
         "mvp": false,
         "isMatchWin": true
@@ -9344,7 +9344,7 @@
         "seq": 3,
         "hero": "王昭君",
         "kda": "3/0/7",
-        "duration": "14:00",
+        "duration": "14:14",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -9361,7 +9361,7 @@
         "seq": 4,
         "hero": "沈梦溪",
         "kda": "6/0/6",
-        "duration": "51:00",
+        "duration": "22:51",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -9378,7 +9378,7 @@
         "seq": 1,
         "hero": "武则天",
         "kda": "0/2/8",
-        "duration": "17:00",
+        "duration": "13:17",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
@@ -9395,7 +9395,7 @@
         "seq": 2,
         "hero": "海月",
         "kda": "3/1/2",
-        "duration": "39:00",
+        "duration": "20:39",
         "result": "胜",
         "mvp": true,
         "isMatchWin": true
@@ -9412,7 +9412,7 @@
         "seq": 3,
         "hero": "嫦娥",
         "kda": "4/0/4",
-        "duration": "16:00",
+        "duration": "15:16",
         "result": "胜",
         "mvp": false,
         "isMatchWin": true
