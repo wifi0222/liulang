@@ -842,6 +842,8 @@
 
         // 四页面自适应切换控制
         function switchTab(target) {
+            window.scrollTo({ top: 0, behavior: 'auto' }); 
+
             const tabProfile = document.getElementById('tab-profile');
             const tabTimeline = document.getElementById('tab-timeline');
             const tabHome = document.getElementById('tab-home');
