@@ -3,7 +3,8 @@ import re
 from flask import Flask, jsonify, render_template
 import pandas as pd
 
-app = Flask(__name__)
+# 告诉 Flask 直接在根目录找 index.html
+app = Flask(__name__, template_folder='.', static_folder='static')
 
 def get_cleaned_data():
     file_path = os.path.join('static', '战绩.xlsx')
