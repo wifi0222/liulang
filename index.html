@@ -738,12 +738,12 @@
             { id: "1", date: "2021", title: "全国大赛盐城 RC 出战，正式踏入职业赛道", desc: "告别路人高分段，初次站上线下职业赛场，埋下中路追梦种子。", imgs: ["1.webp"], isVertical: false },
             { id: "2", date: "2023.01.04", title: "北京 WB 官宣自留签升入一队大名单", desc: "拿到 KPL 注册选手资格，拥有登上顶级联赛的入场券。", imgs: ["2.webp"], isVertical: false },
             { id: "3", date: "2023 上半年", title: "租借 K 甲 MD 战队，多次拿下全场最佳", desc: "次级联赛打磨节奏与团战，为 KPL 首秀积攒赛场经验。", imgs: ["3.webp"], isVertical: false },
-            { id: "4", date: "2023.07.09", title: "KPL 职业生涯首秀", desc: "职业生涯第一场 KPL 正赛，两小局连拿 MVP，险些完成让二追三，一战被观众熟知！", imgs: ["4.webp"], isVertical: false },
+            { id: "4", date: "2023.07.09", title: "KPL 职业生涯首秀", desc: "职业生涯第一场 KPL 正赛，两小局连拿 MVP，一战被观众熟知！", imgs: ["4.webp"], isVertical: false },
             { id: "5", date: "2023.11.13", title: "19岁生日", desc: "身披 WB 队服度过职业第一年生日，仍处于替补轮换阶段。", imgs: ["5.webp"], isVertical: true },
             { id: "6", date: "2024.01.21", title: "官宣从北京 WB 转会苏州 KSG", desc: "职业生涯最重要转折点，告别漫长替补，奔赴 KSG 开启首发核心之路！", imgs: ["6.webp"], isVertical: false },
             { id: "7", date: "2024.07.09", title: "KPL 登场 1 周年纪念", desc: "距离首秀过去一整年，完成转会、首发多重跨越。", imgs: ["7.webp"], isVertical: false },
             { id: "8", date: "2024.09.15", title: "2024KPL 夏季赛总决赛・联赛亚军", desc: "带领 KSG 闯入队史首个总决赛，收获亚军，留下遗憾伏笔。", imgs: ["8.webp"], isVertical: false },
-            { id: "9", date: "2024.11.10", title: "达成 1000 职业助攻里程碑", desc: "千次助攻见证他兼顾输出与团队拉扯的全能中路特质。", imgs: ["9.webp"], isVertical: true },
+            { id: "9", date: "2024.11.10", title: "达成 1000 职业助攻里程碑", desc: "千次助攻见证了兼顾输出与团队拉扯的全能中路特质。", imgs: ["9.webp"], isVertical: true },
             { id: "10", date: "2024.11.13", title: "20岁生日", desc: "转会 KSG 后首个生日，已经完成从替补到决赛中单的蜕变。", imgs: ["10.webp"], isVertical: false },
             { id: "11", date: "2025.07.09", title: "KPL 登场 2 周年纪念", desc: "两年职业路，从新人替补成长为 KSG 绝对核心。", imgs: ["11.webp"], isVertical: false },
             { id: "12", date: "2025.07.10", title: "达成 300 职业总局、500 总击杀双里程碑", desc: "个人赛场数据再创新高，职业生涯对局与击杀双重突破！", imgs: ["12.webp", "12(1).webp"], isVertical: false },
@@ -796,9 +796,32 @@
                     </div>
                 `;
             }).join('');
-            
-            container.innerHTML = timelineHtml;
-        }
+        
+        // 新增：未完待续收尾卡片
+        const toBeContinuedHtml = `
+            <div class="relative pl-2 sm:pl-4">
+                <!-- 最后一个特殊轨道锚点 (带闪烁动画的星星) -->
+                <div class="absolute -left-[45px] sm:-left-[61px] top-1.5 w-7 h-7 rounded-full bg-[#FEFCBF] border-4 border-[#90CDF4] shadow-md flex items-center justify-center text-xs z-20 animate-pulse">
+                    ✨
+                </div>
+
+                <!-- 奶黄色的未完待续贴纸 -->
+                <span class="inline-block bg-[#FEFCBF] border-2 border-white text-[#B7791F] text-xs sm:text-sm font-black px-4 py-1 rounded-full sticker-badge tracking-wider mb-3 animate-bounce">
+                    未完待续...
+                </span>
+
+                <!-- 虚线边框卡片 -->
+                <div class="bubble-card p-5 bg-[#F0F9FF] border-2 border-dashed border-[#90CDF4] max-w-4xl">
+                    <h3 class="title-font text-base sm:text-lg text-[#2B6CB0] font-black">🌟 故事仍在书写，未来一同见证</h3>
+                    <p class="text-xs sm:text-sm text-gray-500 leading-relaxed font-bold mt-1">
+                        每一个里程碑都是新的起点，属于流浪与小浪花们的精彩篇章仍在继续... 🐾
+                    </p>
+                </div>
+            </div>
+        `;
+        
+        container.innerHTML = timelineHtml + toBeContinuedHtml;
+    }
 
         // 修改原本的初始化逻辑：让 init 同时启动时间轴渲染
         const originalInit = init;
